@@ -1,0 +1,22 @@
+{
+  "name": "javango-jango",
+  "version": "1.0.0",
+  "description": "Site da escola de música javango jango",
+  "main": "index.js",
+  "scripts": {
+    "compose:up": "cd app && docker-compose up -d --build",
+    "compose:down": "cd app && docker-compose down --remove-orphans",
+    "logs": "cd app && docker-compose logs -f"
+  },
+  "author": "Gabriel Marchese",
+  "license": "ISC",
+  "devDependencies": {
+    "camelcase": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "sequelize": "^6.35.0",
+    "sequelize-cli": "^6.6.2"
+  },
+  "dependencies": {
+    "mysql2": "^3.6.3"
+  }
+}
