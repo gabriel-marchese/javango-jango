@@ -1,0 +1,40 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100vw;
+}
+
+h2 {
+    font-size: 4rem;
+    letter-spacing: -6px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 4rem;
+}
+
+main > div {
+    display: flex;
+    gap: 2rem;
+}
+
+main > div > img {
+    width: 300px;
+}
+
+.text-section-home {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-section-home > p {
+    width: 600px;
+    letter-spacing: 1.5px;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-section-home > h2 {
+    font-size: 3rem;
+    letter-spacing: -4px;
+}
