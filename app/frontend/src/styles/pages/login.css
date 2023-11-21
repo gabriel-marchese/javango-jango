@@ -9,6 +9,7 @@
 
 .login-content {
     height: 400px;
+    position: relative;
     width: 600px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
@@ -16,7 +17,6 @@
     justify-content: space-between;
     background-color: white;
 }
-
 
 .login-content > div > h2 {
     font-size: 3rem;
@@ -77,6 +77,11 @@ label {
     border-radius: 19px;
     border: 2px solid black;
     padding: 7px;
+}
+
+.error-message {
+    text-align: center;
+    width: 250px;
 }
 
 form > button {
