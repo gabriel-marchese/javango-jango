@@ -1,0 +1,53 @@
+.create-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-section > form {
+    margin-top: 10rem;
+}
+
+.create-section > form > label > input {
+    border-radius: 19px;
+    border: 2px solid black;
+    padding: 7px;
+}
+
+.select-create {
+    border-radius: 19px;
+    border: 2px solid black;
+    padding: 7px;
+    background-color: white;
+}
+
+label {
+    position: relative;
+}
+
+.create-input {
+    position: absolute;
+    color: red;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 9px;
+    top: -16px;
+    left: 15px;
+}
+
+.option-div {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.option-div > label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-div > label > p {
+    color: red;
+}

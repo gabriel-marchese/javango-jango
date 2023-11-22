@@ -25,6 +25,17 @@ class userController {
     }
     return res.status(401).json({ message: 'User not found' });
   }
+
+  public async getUsers(req: Request, res: Response): Promise<Response> {
+    const serviceResponse = await this.userService.getUsers();
+    return res.status(200).json(serviceResponse.data);
+  }
+
+  public async createUser(req: Request, res: Response): Promise<Response> {
+    const user = req.body;
+    const serviceResponse = await this.userService.createUser(user);
+    return res.status(200).json(serviceResponse.data);
+  }
 }
 
 export default userController;

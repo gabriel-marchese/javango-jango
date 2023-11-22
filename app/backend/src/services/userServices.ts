@@ -2,6 +2,7 @@ import * as bcrypt from 'bcryptjs';
 import UserModelT from '../models/userModel';
 import Login from '../Interfaces/Ilogin';
 import jwt from '../utils/jwt';
+import User from '../database/models/User';
 
 class UserService {
   constructor(private userModel = new UserModelT()) {}
@@ -28,6 +29,16 @@ class UserService {
     if (!user) {
       return { status: 'UNAUTHORIZED', data: { message: 'User not found' } };
     }
+    return { status: 'SUCCESSFUL', data: user };
+  }
+
+  public async getUsers() {
+    const user = await this.userModel.getUsers();
+    return { status: 'SUCCESSFUL', data: user };
+  }
+
+  public async createUser(user: User) {
+    const newUser = await this.userModel.createUser(user);
     return { status: 'SUCCESSFUL', data: user };
   }
 }

@@ -7,7 +7,7 @@ type TokenPayload = {
 };
 
 function sign(payload: TokenPayload): string {
-  const token = jwt.sign(payload, secret);
+  const token = jwt.sign(payload, secret, { expiresIn: '1d' });
   return token;
 }
 

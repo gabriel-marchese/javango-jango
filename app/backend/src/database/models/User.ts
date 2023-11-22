@@ -15,6 +15,9 @@ import {
     declare email: string;
     declare password: string;
     declare isActive: boolean;
+    declare price: number;
+    declare payment: Date;
+    declare type: string;
   }
   
   User.init({
@@ -37,6 +40,18 @@ import {
       allowNull: false,
     },
     password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    price: {
+      type: DataTypes.FLOAT,
+      allowNull: false,
+    },
+    payment: {
+      type: DataTypes.DATEONLY,
+      allowNull: false,
+    },
+    type: {
       type: DataTypes.STRING,
       allowNull: false,
     },

@@ -26,8 +26,20 @@ export default {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      isActive: {
+      price: {
+        type: DataTypes.FLOAT,
+        allowNull: false,
+      },
+      payment: {
+        type: DataTypes.DATEONLY,
+        allowNull: false,
+      },
+      type: {
         type: DataTypes.STRING,
+        allowNull: false,
+      },
+      isActive: {
+        type: DataTypes.BOOLEAN,
         allowNull: false,
         field: 'is_active',
       }

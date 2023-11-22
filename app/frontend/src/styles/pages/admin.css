@@ -1,0 +1,84 @@
+.admin-header {
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+}
+
+.admin-header > ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.admin-header > ul > li > a {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.admin-header > ul > li > a:hover {
+   color: rgb(202, 18, 18);
+}
+
+
+.admin-header > h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.red-line {
+    width: 700px;
+    height: 3px;
+    margin: auto;
+    background-color: rgb(255, 206, 206);
+    border-radius: 500%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+thead{
+    background-color: #333;
+	color: white;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+}
+
+main > form {
+    margin: 5rem 0rem 3rem 0rem;
+}
+
+main > form > label > input {
+    border-radius: 19px 0px 0px 19px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+main > form > label > button {
+    border-radius: 0px 19px 19px 0px;
+    border: 2px solid black;
+    padding: 5px;
+    margin-left: -2px;
+    background-color: rgb(143, 143, 143);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
