@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Site da escola de música javango jango",
   "main": "index.js",
-  "engines": {
-    "node": "14.x"
-  },
+  
   "scripts": {
     "build": "cd app cd backend tsc --project tsconfig.json",
     "prestart": "cd app cd backend npm run build && npm run db:reset",
