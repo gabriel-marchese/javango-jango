@@ -4,7 +4,7 @@
   "description": "Site da escola de música javango jango",
   "main": "index.js",
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "scripts": {
     "build": "cd app cd backend tsc --project tsconfig.json",
