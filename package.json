@@ -7,9 +7,6 @@
     "node": "18.x"
   },
   "scripts": {
-    "build": "cd app cd backend tsc --project tsconfig.json",
-    "prestart": "cd app && cd backend && npm run build && npm run db:reset",
-    "start": "cd app && cd backend && node ./build/server.js",
     "compose:up": "cd app && docker-compose up -d --build",
     "compose:down": "cd app && docker-compose down --remove-orphans",
     "logs": "cd app && docker-compose logs -f"
