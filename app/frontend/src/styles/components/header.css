@@ -47,6 +47,7 @@ nav > img {
 }
 
 .header-list-itens > ul {
+    align-items: center;
     display: flex;
     gap: 1rem;
     list-style: none;
@@ -73,7 +74,58 @@ nav > img {
     transition: 400ms;
 }
 
+.header-list-itens > div {
+    display: flex;
+    align-items: center;
+}
+
 hr {
     width: 60vw;
     border-radius: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: 100vw;
+    }
+
+    .header-list-itens > ul {
+        gap: 0.8rem;
+        list-style: none;
+        font-size: 0.9rem;
+    }
+
+    .header-list-itens > div > button {
+        font-size: 0.8rem;
+    }
+
+
+    header > div > div > p {
+        margin-top: 50px;
+        width: 400px;
+        padding: 1.2rem;
+        color: rgb(212, 212, 212);
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    header {
+        height: 70dvh;
+    }
+
+    header > div {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    header {
+        height: 80dvh;
+    }
+
+    header > div {
+        height: 80vh;
+    }
 }

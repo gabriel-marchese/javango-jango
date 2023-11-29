@@ -40,3 +40,13 @@ footer > p {
     font-size: 0.9rem;
     align-self: center;
 }
+
+@media screen and (max-width: 768px) {
+    footer {
+        width: 100dvw;
+    }
+
+    footer > :nth-child(2) {
+        width: 70dvw;
+    }
+}
