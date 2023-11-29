@@ -11,7 +11,7 @@ const HeaderUser = () => {
             <ul>
             <li><a href="#">Perfil</a></li>
             <li><a href="#">Músicas</a></li>
-            <li><a href="#" >Sair</a></li>
+            <li><a href="/login" >Sair</a></li>
             </ul>
         </header>
         <div className="red-line"></div>
