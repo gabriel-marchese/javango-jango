@@ -14,6 +14,7 @@ Ele também conta com página para não alunos, a onde pessoas podem ver e solic
 * Front-end: React.js / CSS
 * Back-end: Node.js / express / sequelize
 * Banco de dados: Mysql
+<br></br>
 
 ### Obrigado por visitar este repositório.
 Se gostou dele, deixe uma estrela.
