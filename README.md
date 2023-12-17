@@ -7,6 +7,7 @@
 ## Bem vindo ao meu repositório, este é destinado ao meu projeto freelancer para a escola de música JavangoJango.
 O Obejtivo dele é criar um site em que alunos cadastrados dentro dele, possam ter acesso a funcionalidades exclusivas.
 Ele também conta com página para não alunos, a onde pessoas podem ver e solicitar uma aula experimental.
+<br></br>
 🚧 Site em Desenvolvimento 🚧
 <br></br>
 
