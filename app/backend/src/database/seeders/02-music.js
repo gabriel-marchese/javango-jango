@@ -1,6 +1,6 @@
 module.exports = {
     up: async (queryInterface) => {
-      await queryInterface.bulkInsert('music', [
+      await queryInterface.bulkInsert('musics', [
         {
           music: 'Sad but True',
           band: 'Metallica',
@@ -19,7 +19,7 @@ module.exports = {
     },
   
     down: async (queryInterface) => {
-      await queryInterface.bulkDelete('music', {});
+      await queryInterface.bulkDelete('musics', {});
     },
   }
   
