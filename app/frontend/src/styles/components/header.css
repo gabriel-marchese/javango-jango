@@ -19,10 +19,12 @@ header > h2 > a {
     list-style: none;
     font-style: normal;
     text-decoration: none;
+    color: black;
 }
 
 header > h2 > a:visited {
     color: black;
+    text-decoration: none;
 }
 
 header > div > div > p {
