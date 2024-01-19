@@ -17,7 +17,6 @@ const CreateUser = () => {
     const token = localStorage.getItem('token');
     setToken(token)
     event.preventDefault();
-    console.log({ name, email, role: user, price,  payment, type: instrument, isActive: true });
     try {
       await newUser('/admin/create', { name, email, role: user, price,  payment, type: instrument, isActive: true });
       localStorage.removeItem('data');
@@ -59,7 +58,7 @@ const CreateUser = () => {
             </select>
           </label>
           <label htmlFor="">
-            <p>Intrumento</p>
+            <p>Instrumento</p>
             <select className='select-create' onChange={ ({ target: { value } }) => setInstrument(value) } name="Instrumento" id="Instrumento">
                 <option value="Guitarra">Guitarra</option>
                 <option value="Bateria">Bateria</option>

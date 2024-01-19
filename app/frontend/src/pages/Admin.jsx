@@ -85,9 +85,6 @@ const Admin = () => {
             </tr>
           </thead>
           <tbody>
-            {
-              console.log(data)
-            }
             {data.map((user) => (
               <tr key={ user.id }>
                 <td>{ user.name }</td>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { requestLogin, setToken, requestData } from '../services/requests';
-import { Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/pages/userHome.css'
 import HeaderUser from '../components/HeaderUser';
 import Icon from '../images/icon-facebook.png';
@@ -9,8 +8,27 @@ import Insta from '../images/icon-instagram.png';
 import Metro from '../images/icon-metronomo.png';
 import Nota from '../images/icon-nota.png';
 import Perfil from '../images/icon-perfil.png';
+import { requestData } from '../services/requests';
 
 const UserHome = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Faz a chamada para o backend para obter os dados
+        const result = await requestData('/home');
+        console.log(result);
+        setData(result);
+      } catch (error) {
+        console.error('Erro ao obter dados:', error);
+      }
+    };
+
+    fetchData();
+  }, [])
+
+
   return (
     <section className='user-home'>
         <div className='music-section'>
@@ -22,19 +40,25 @@ const UserHome = () => {
                   <button>Buscar</button>
                 </label>
                 <select name="Instrumento" id="instrumento">
+                  <option value="Todos">Todos</option>
                   <option value="Guitarra">Guitarra</option>
                   <option value="Baixo">Baixo</option>
                   <option value="Bateria">Bateria</option>
                 </select>
               </form>
-              <ul>
-                <li><img src={ Logo } alt="" />Music <img src={ Nota } alt="" /></li>
-                <li><img src={ Logo } alt="" />Music <img src={ Nota } alt="" /></li>
-                <li><img src={ Logo } alt="" />Music <img src={ Nota } alt="" /></li>
-                <li><img src={ Logo } alt="" />Music <img src={ Nota } alt="" /></li>
-                <li><img src={ Logo } alt="" />Music <img src={ Nota } alt="" /></li>
-                <li><img src={ Logo } alt="" />Music <img src={ Nota } alt="" /></li>
-              </ul>
+              <div>
+              {data.map(item => (
+                <Link to={`/music/${item.id}`} className='link-music' key={item.id}>
+                  <img src={Logo} alt="" className='logo-music'/>
+                  <div className='music-list-item'>
+                    <p>{ item.band }</p>
+                    <p>{ item.music }</p>
+                    <p>{ item.instrument }</p>
+                  </div> 
+                  <img src={Nota} alt="" className='logo-music'/>
+                </Link>
+              ))}
+              </div>
             </section>
         </div>
         <aside>
@@ -51,8 +75,8 @@ const UserHome = () => {
             </div>
 
             <div>
-              <a href="https://www.facebook.com/JavangoJango/" target="_blank"><img className='aside-icon' src={ Icon } alt="" /></a>
-              <a href="https://www.instagram.com/javangojango/" target="_blank"><img className='aside-icon' src={ Insta } alt="" /></a>
+              <a href="https://www.facebook.com/JavangoJango/" target="_blank" rel="noreferrer" ><img className='aside-icon' src={ Icon } alt="" /></a>
+              <a href="https://www.instagram.com/javangojango/" target="_blank" rel="noreferrer"><img className='aside-icon' src={ Insta } alt="" /></a>
             </div>
         </aside>
     </section>

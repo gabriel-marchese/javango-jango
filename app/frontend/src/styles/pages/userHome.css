@@ -68,12 +68,11 @@
     background-color: white;
 }
 
-.music-list > ul {
-    list-style: none;
+.music-list > div {
     margin-top: 3rem;
 }
 
-.music-list > ul > li {
+.music-list > div > a {
     justify-content: space-between;
     margin-top: 10px;
     width: 40vw;
@@ -83,7 +82,7 @@
     border-radius: 7px;
 }
 
-.music-list > ul > li > img {
+.logo-music{
     width: 25px;
 }
 
@@ -106,4 +105,23 @@ aside > div {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.link-music {
+    text-decoration: none;
+}
+
+.music-list-item > p {
+    color: rgb(83, 83, 83);
+}
+
+.music-list-item > p:nth-child(2)  {
+    color: rgb(207, 0, 0);
+    font-weight: bold;
+}
+
+.music-list-item {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
 }

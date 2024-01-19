@@ -1,0 +1,16 @@
+.section-music {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-music > form {
+    margin-top: 10rem;
+}
+
+.section-music > form > label > input {
+    border-radius: 19px;
+    border: 2px solid black;
+    padding: 7px;
+}

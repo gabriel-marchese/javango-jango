@@ -7,10 +7,10 @@ const HeaderOther = () => {
   return (
     <>
         <header className="admin-header">
-            <h2>JavangoJango</h2>
+            <h2><a href="/">JavangoJango</a></h2>
             <ul>
-            <li><a href="#">Músicas</a></li>
-            <li><a href="#">Professores</a></li>
+            <li><a href="music/create">Músicas</a></li>
+            <li><a href="professors">Professores</a></li>
             <li><a href="admin/create" >Cadastrar Aluno</a></li>
             </ul>
         </header>

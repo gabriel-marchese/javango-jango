@@ -9,10 +9,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --project tsconfig.json",
-    "start": "node ./build/server.js",
-    "db:reset": "npx tsc && npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+    "start": "node ./src/server.js",
+    "db:reset": "npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
     "predev": "npm run db:reset",
-    "dev": "tsnd --watch \"./src/**\" --transpile-only ./src/server.ts"
+    "dev": "nodemon ./src/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -25,10 +25,9 @@
     "@types/sequelize": "^4.28.18",
     "@types/validator": "^13.11.6",
     "@vercel/edge-config": "^0.4.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
     "nodemon": "^3.0.1",
-    "nyc": "^15.1.0",
-    "pg": "^8.11.3",
-    "pg-hstore": "^2.3.4",
     "sequelize-cli": "^6.6.2",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
