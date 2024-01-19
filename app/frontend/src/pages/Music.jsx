@@ -20,7 +20,7 @@ const Music = () => {
         // Verifica se o resultado é um objeto e converte para um array, se necessário
         const detailsArray = Array.isArray(result) ? result : [result];
         const key = detailsArray[0].key;
-        const pdfLink = [{ uri: `http://localhost:3001/files/${key}` }];
+        const pdfLink = [{ uri: `https://javangojango-api.onrender.com/files/${key}` }];
         setUrl(pdfLink);
         setMusicDetails(detailsArray);
       } catch (error) {
