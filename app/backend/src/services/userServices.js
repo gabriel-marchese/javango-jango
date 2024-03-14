@@ -36,7 +36,12 @@ const getUsers = async (role) => {
 
 const createUser = async (user) => {
     const newUser = await userModel.createUser(user);
-    return { status: 'SUCCESSFUL', data: user };
+    return { status: 'SUCCESSFUL', data: newUser };
+}
+
+const findUser = async (id) => {
+  const user = await userModel.findUser(id);
+  return { status: 'SUCCESSFUL', data: user };
 }
 
 module.exports = {
@@ -44,4 +49,5 @@ module.exports = {
   findEmail,
   getUsers,
   createUser,
+  findUser,
 }

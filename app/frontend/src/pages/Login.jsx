@@ -18,11 +18,12 @@ const Login = () => {
 
       setToken(token);
 
-      const { role } = await requestData('/login/role', { email, password });
+      const { role, id } = await requestData('/login/role', { email, password });
       if (role === 'admin') {
         setIsAdmin(true);
       }
-
+      
+      localStorage.setItem('id', id)
       localStorage.setItem('token',  token);
       localStorage.setItem('role',  role);
 

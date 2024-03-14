@@ -12,14 +12,16 @@ import { requestData } from '../services/requests';
 
 const UserHome = () => {
   const [data, setData] = useState([]);
+  const [id, setId] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         // Faz a chamada para o backend para obter os dados
         const result = await requestData('/home');
-        console.log(result);
         setData(result);
+        const id = localStorage.getItem('id');
+        setId(id)
       } catch (error) {
         console.error('Erro ao obter dados:', error);
       }
@@ -65,8 +67,8 @@ const UserHome = () => {
             <img className='logo-icon' src={ Logo } alt="" />
 
             <div>
-              <img src={ Perfil } alt="" />
-              <p>Perfil</p>
+              
+              <Link to={`/user/${id}`}><img src={ Perfil } alt="" />Perfil</Link>
               <img className='aside-icon' src={ Metro } alt="" />
               <p>Metrônomo</p>
               <img className='aside-icon' src={ Nota } alt="" />

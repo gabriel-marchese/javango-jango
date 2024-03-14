@@ -15,18 +15,22 @@ const Header = () => {
                 <img src={ Logo } alt="Logo da escola de música Javango Jango" />
                 <div className='header-list-itens'>
                     <ul>
-                        <li>Aulas</li>
-                        <li>Quero ser um Aluno</li>
-                        <li>Saiba Mais</li>
+                        <li><a href="#"></a>NOSSA HISTÓRIA</li>
+                        <li><a href="#"></a>CURSOS</li>
+                        <li><a href="#"></a>ESTRUTURA</li>
+                        <li><a href="#"></a>PROFESSORES</li>
+                        <li><a href="#"></a>EVENTOS</li>
+                        <li><a href="#"></a>CONTATOS</li>
                     </ul>
-                    <div>
+                    {/* <div>
                         <button type='button' onClick={ () => setGoLogin(true) }>Entrar</button>
-                    </div>         
+                    </div>          */}
                 </div>
             </nav>
-            <hr />
             <div>
-                <p>Lorem ipsum dolor sit, amet consectetur <span className='text-emphasis'>adipisicing</span> elit. Explicabo provident vero sint, suscipit, distinctio tempore laboriosam ea cumque blanditiis quaerat natus mollitia quod autem dolorum fugiat, <span className='text-emphasis'>magnam dignissimos</span> praesentium soluta!</p>
+                <p>UMA ESCOLA DE</p>
+                <p>MUSICA QUE PENSA</p>
+                <p>SEMPRE EM <span className='text-emphasis'>VOCÊ!</span></p>
             </div>  
         </div>
     </header>

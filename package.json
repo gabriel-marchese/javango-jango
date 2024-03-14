@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "mysql2": "^3.6.3",
-    "pg-hstore": "^2.3.4"
+    "pg-hstore": "^2.3.4",
+    "pixout": "^1.2.6"
   }
 }

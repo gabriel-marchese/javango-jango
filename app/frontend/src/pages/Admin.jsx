@@ -18,29 +18,9 @@ const Admin = () => {
 
     const fetchData = async () => {
       try {
-        const storedData = localStorage.getItem('data');
-        if (storedData) {
-          let parsedData;
-          try {
-            parsedData = JSON.parse(storedData);
-          } catch (error) {
-            console.error('Erro ao fazer o parse dos dados do localStorage:', error);
-          }
-
-          if (parsedData && Array.isArray(parsedData)) {
-            setData(parsedData);
-          } else {
-            // Se a string no localStorage não é um array JSON válido, recarregue os dados da API
-            const newData = await requestData('/admin');
-            localStorage.setItem('data', JSON.stringify(newData));
-            setData(newData);
-          }
-        } else {
-          // Se não há dados no localStorage, recarregue os dados da API
-          const newData = await requestData('/admin');
-          localStorage.setItem('data', JSON.stringify(newData));
-          setData(newData);
-        }
+        const result = await requestData('/admin');
+        const detailsArray = Array.isArray(result) ? result : [result];
+        setData(detailsArray)
       } catch (error) {
         console.error('Erro ao obter dados de usuários:', error);
       }

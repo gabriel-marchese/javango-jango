@@ -39,8 +39,17 @@ const createUser = async (user) => {
   return data;
 }
 
+const findUser = async (id) => {
+  const data = await User.findOne({ where: { id } });
+  if (data === null) {
+    return null;
+  }
+  return data;
+}
+
 module.exports = {
   findOne,
   getUsers,
   createUser,
+  findUser,
 }

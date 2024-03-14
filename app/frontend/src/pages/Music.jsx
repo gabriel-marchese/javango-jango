@@ -21,6 +21,7 @@ const Music = () => {
         const detailsArray = Array.isArray(result) ? result : [result];
         const key = detailsArray[0].key;
         const pdfLink = [{ uri: `https://javangojango-api.onrender.com/files/${key}` }];
+        //`https://javangojango-api.onrender.com/files/${key}`
         setUrl(pdfLink);
         setMusicDetails(detailsArray);
       } catch (error) {

@@ -17,7 +17,8 @@ const userLogin = async (req, res) => {
   const serviceResponse = await userService.findEmail(user.email);
   if ('role' in serviceResponse.data) {
     const { role } = serviceResponse.data;
-    return res.status(200).json({ role });
+    const { id } = serviceResponse.data;
+    return res.status(200).json({ role, id });
   }
   return res.status(401).json({ message: 'User not found' });
 }
@@ -35,9 +36,16 @@ const createUser = async (req, res) => {
   return res.status(200).json(serviceResponse.data);
 }
 
+const findUser = async (req, res) => {
+  const { id } = req.params;
+  const serviceResponse = await userService.findUser(id);
+  return res.status(200).json(serviceResponse.data);
+}
+
 module.exports = {
   login,
   userLogin,
   getUsers,
-  createUser
+  createUser,
+  findUser
 }

@@ -3,8 +3,6 @@ const { musicService } = require('../services/index');
 const newMusic = async (req, res) => {
   const musicData = req.body;
   const fileData = req.file;
-  console.log(musicData);
-  console.log(fileData);
   await musicService.newMusic(fileData, musicData)
   return res.status(200).json();
 }

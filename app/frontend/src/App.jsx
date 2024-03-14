@@ -9,6 +9,7 @@ import CreateUser from './pages/CreateUser';
 import CreateMusic from './pages/CreateMusic';
 import Professors from './pages/Professors';
 import Music from './pages/Music';
+import UserDetails from './pages/UserDetails';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/music/create" element= { <CreateMusic/> } ></Route>
       <Route path="/professors" element = { <Professors/> }></Route>
       <Route path="/music/:id" element = { <Music /> }></Route>
+      <Route path="/user/:id" element = { <UserDetails /> }></Route>
     </Routes>
   );
 }

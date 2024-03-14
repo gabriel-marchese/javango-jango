@@ -1,0 +1,10 @@
+.maps {
+    margin-top: 6rem;
+    display: flex;
+}
+
+.maps > iframe {
+    width: 100vw;
+    height: 600px;
+    border: 0;
+}
