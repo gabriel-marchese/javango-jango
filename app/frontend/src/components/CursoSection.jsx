@@ -11,57 +11,63 @@ import Guitarra from '../images/foto_guitarra_palheta.png';
 const CursoSection = () => {
 
   return (
-    <section className='cursos-section'>
-        <div>
-            <div>
-                <div className='color-ground'></div>
-                <h2>Bateria</h2>
-            </div>
-            <img src={ FundoImagem } alt="Palheta Pontilhada" />
-            <img src={ Bateria } alt="Foto de uma bateria acústica em forma de palheta" />
+    <>
+        <div className='title-cursos'>
+            <h2>Cursos</h2>
+            <div></div>
         </div>
-        <div>
+        <section className='cursos-section'>
             <div>
-                <div className='color-ground'></div>
-                <h2>Guitarra</h2>
+                <div>
+                    <div className='color-ground'></div>
+                    <h2>Bateria</h2>
+                </div>
+                <img src={ FundoImagem } alt="Palheta Pontilhada" />
+                <img src={ Bateria } alt="Foto de uma bateria acústica em forma de palheta" />
             </div>
-            <img src={ FundoImagem1 } alt="Palheta Pontilhada" />
-            <img src={ Guitarra } alt="Foto de uma bateria acústica em forma de palheta" />
-        </div>
-        <div>
             <div>
-                <div className='color-ground'></div>
-                <h2>Bateria</h2>
+                <div>
+                    <div className='color-ground'></div>
+                    <h2>Guitarra</h2>
+                </div>
+                <img src={ FundoImagem1 } alt="Palheta Pontilhada" />
+                <img src={ Guitarra } alt="Foto de uma bateria acústica em forma de palheta" />
             </div>
-            <img src={ FundoImagem2 } alt="Palheta Pontilhada" />
-            <img src={ Bateria } alt="Foto de uma bateria acústica em forma de palheta" />
-        </div>
-        <div>
             <div>
-                <div className='color-ground'></div>
-                <h2>Guitarra</h2>
+                <div>
+                    <div className='color-ground'></div>
+                    <h2>Bateria</h2>
+                </div>
+                <img src={ FundoImagem2 } alt="Palheta Pontilhada" />
+                <img src={ Bateria } alt="Foto de uma bateria acústica em forma de palheta" />
             </div>
-            <img src={ FundoImagem3 } alt="Palheta Pontilhada" />
-            <img src={ Guitarra } alt="Foto de uma bateria acústica em forma de palheta" />
-        </div>
-        <div>
             <div>
-                <div className='color-ground'></div>
-                <h2>Bateria</h2>
+                <div>
+                    <div className='color-ground'></div>
+                    <h2>Guitarra</h2>
+                </div>
+                <img src={ FundoImagem3 } alt="Palheta Pontilhada" />
+                <img src={ Guitarra } alt="Foto de uma bateria acústica em forma de palheta" />
             </div>
-            <img src={ FundoImagem } alt="Palheta Pontilhada" />
-            <img src={ Bateria } alt="Foto de uma bateria acústica em forma de palheta" />
-        </div>
-        <div>
             <div>
-                <div className='color-ground'></div>
-                <h2>Guitarra</h2>
+                <div>
+                    <div className='color-ground'></div>
+                    <h2>Bateria</h2>
+                </div>
+                <img src={ FundoImagem } alt="Palheta Pontilhada" />
+                <img src={ Bateria } alt="Foto de uma bateria acústica em forma de palheta" />
             </div>
-            <img src={ FundoImagem } alt="Palheta Pontilhada" />
-            <img src={ Guitarra } alt="Foto de uma bateria acústica em forma de palheta" />
-        </div>
-        
-    </section>
+            <div>
+                <div>
+                    <div className='color-ground'></div>
+                    <h2>Guitarra</h2>
+                </div>
+                <img src={ FundoImagem } alt="Palheta Pontilhada" />
+                <img src={ Guitarra } alt="Foto de uma bateria acústica em forma de palheta" />
+            </div>
+            
+        </section>
+    </>
   ) 
 }
 

@@ -8,7 +8,7 @@ const Place = () => {
   return (
     <section className='our-place'>
         <div className='place-background'></div>
-        <h2>MÚSICA, AMIGOS E MAIS...</h2>
+        <h2>ESTRUTURA, CONFORTO, MÚSICA...</h2>
         <div>
             <img src={ imagem1 } alt="" />
         </div>

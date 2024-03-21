@@ -7,6 +7,9 @@ import CursoSection from '../components/CursoSection';
 import ImageBackground from '../components/ImageBackground';
 import Place from '../components/Place';
 import Maps from '../components/Maps';
+import Baqueta from '../images/baqueta_vermelha.png';
+import Violao from '../images/violao-vermelho.png';
+import Palheta from '../images/palheta_vermelha.png';
 
 const Home = () => {
   
@@ -15,6 +18,18 @@ const Home = () => {
      <Header />
      <main>
        <h2>JAVANGO<span className="stroke-text">JANGO</span></h2>
+       <div className='fundo-imagem'>
+         <img src={ Palheta } alt="" />
+       </div>
+       <div className='fundo-imagem2'>
+         <img src={ Violao } alt="" />
+       </div>
+       <div className='fundo-imagem3'>
+         <img src={ Baqueta } alt="" />
+       </div>
+       <div className='fundo-imagem4'>
+         <img src={ Baqueta } alt="" />
+       </div>
        <div>
          <div className='text-section-home'>
           <h2>Método de Estudos</h2>

@@ -19,15 +19,13 @@
 .our-place > h2 {
     width: 340px;
     padding: 0 8px;
-    font-size: 5rem;
+    font-size: 4rem;
+    letter-spacing: -3px;
     z-index: 5;
     color: white;
     position: absolute;
     top: 8rem;
     left: 29rem;
-}
-
-.our-place > :nth-child(3) {
 }
 
 .our-place > :nth-child(3) > img {
@@ -42,7 +40,7 @@
 .our-place > :nth-child(4) {
     display: flex;
     position: absolute;
-    bottom: 8rem;
+    bottom: 10rem;
     left: 29rem;
 }
 
@@ -72,3 +70,20 @@
 }
 
 
+@media screen and (max-height: 900px) {
+    .our-place > :nth-child(3) > img {
+        right: 20rem;
+    }
+
+    .place-background {
+        left: 0;
+    }
+
+    .our-place > h2 {
+        left: 12.2rem;
+    }
+
+    .our-place > :nth-child(4) {
+        left: 12.2rem;
+    }
+}

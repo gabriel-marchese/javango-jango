@@ -2,7 +2,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 8rem;
+    height: 17rem;
     background-color: rgb(44, 44, 44);
     margin-top: 3rem;
 }
@@ -11,6 +11,31 @@ footer > div {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 0 15rem;
+}
+
+footer > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 25rem;
+}
+
+footer > section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+footer > section > div > h4 {
+    color: rgb(189, 19, 19);
+    margin: 1rem;
+}
+
+footer > section > div {
+    color: whitesmoke;
+    margin-bottom: 1rem;
 }
 
 footer > div > p {
@@ -31,7 +56,15 @@ footer > :nth-child(2) {
     background-color: rgba(102, 102, 102, 0.692);
     border-radius: 0px;
     align-self: center;
-    width: 400px;
+    width: 900px;
+    margin: 1rem 0rem;
+}
+footer > :nth-child(4) {
+    height: 1px;
+    background-color: rgba(102, 102, 102, 0.692);
+    border-radius: 0px;
+    align-self: center;
+    width: 100vw;
     margin: 1rem 0rem;
 }
 

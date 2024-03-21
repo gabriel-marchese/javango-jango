@@ -4,6 +4,7 @@ main {
     align-items: center;
     margin-top: 3rem;
     width: 100vw;
+    position: relative;
 }
 
 h2 {
@@ -11,6 +12,54 @@ h2 {
     letter-spacing: -6px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 4rem;
+}
+
+.fundo-imagem {
+    position: absolute;
+    left: 10rem;
+    top: 9rem;
+    rotate: 40deg;
+    z-index: -10;
+}
+
+.fundo-imagem3 {
+    position: absolute;
+    right: 28rem;
+    top: -5rem;
+    rotate: -60deg;
+    z-index: -10;
+}
+
+.fundo-imagem3 > img {
+    width: 200px;
+}
+
+.fundo-imagem4 {
+    position: absolute;
+    left: 39rem;
+    top: 36rem;
+    rotate: -20deg;
+    z-index: -10;
+}
+
+.fundo-imagem4 > img {
+    width: 350px;
+}
+
+.fundo-imagem2 {
+    position: absolute;
+    right: -3rem;
+    top: 24rem;
+    rotate: -100deg;
+    z-index: -10;
+}
+
+.fundo-imagem2 > img {
+    width: 500px;
+}
+
+.fundo-imagem > img {
+    width: 400px;
 }
 
 main > div {

@@ -149,30 +149,6 @@ hr {
 }
 
 
-
-
-@media screen and (max-width: 1680px) {
-    header > div > div > p {
-        margin-top: 50px;
-        width: 600px;
-        padding: 1.2rem;
-        color: rgb(212, 212, 212);
-        font-size: 1.9rem;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    header > div > div > p {
-        margin-top: 50px;
-        width: 600px;
-        padding: 1.2rem;
-        color: rgb(212, 212, 212);
-        font-size: 1.7rem;
-        text-align: center;
-    }
-}
-
 @media screen and (max-width: 768px) {
     nav {
         width: 100vw;
@@ -201,20 +177,57 @@ hr {
 
 @media screen and (max-height: 900px) {
     header {
-        height: 70dvh;
+        height: 100vh;
     }
 
     header > div {
-        height: 70vh;
+        height: 100vh;
+    }
+
+    header > div > div > :nth-child(1) {
+        margin-top: 15rem;
+        font-weight: 700;
+        line-height: 3rem;
+        color: black;
+        font-size: 3rem;
+        padding: 3px 15px;
+        position: absolute;
+        background-color: white;
+        left: 17rem;
+        top: 17rem;
+    }
+    header > div > div > :nth-child(2) {
+        margin-top: 15rem;
+        font-weight: 700;
+        line-height: 3rem;
+        color: black;
+        font-size: 3rem;
+        position: absolute;
+        padding: 3px 15px;
+        background-color: white;
+        left: 17rem;
+        top: 20rem;
+    }
+    header > div > div > :nth-child(3) {
+        margin-top: 15rem;
+        font-weight: 700;
+        line-height: 3rem;
+        padding: 3px 15px;
+        color: black;
+        font-size: 3rem;
+        position: absolute;
+        background-color: white;
+        left: 17rem;
+        top: 23rem;
     }
 }
 
 @media screen and (max-height: 700px) {
     header {
-        height: 80dvh;
+        height: 100dvh;
     }
 
     header > div {
-        height: 80vh;
+        height: 100vh;
     }
 }

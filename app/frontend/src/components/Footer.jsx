@@ -15,6 +15,21 @@ const Footer = () => {
             </div>
         </div>
         <div></div>
+        <section>
+          <div>
+            <h4>Localização</h4>
+            <p>R. Álvaro Gomes, 28 - Mandaqui</p>
+          </div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p>(11)970841982</p>
+          </div>
+          <div>
+            <h4>Funcionamento</h4>
+            <p>Seg a Sab: 8-21h</p>
+          </div>
+        </section>
+        <div></div>
         <p>Site desenvolvido por Gabriel Marchese</p>
     </footer>
   ) 

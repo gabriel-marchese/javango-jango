@@ -4,6 +4,28 @@
     flex-wrap: wrap;
     width: 1200px;
     margin: auto;
+    margin-top: -4rem;
+    margin-bottom: 10rem;
+    height: 60rem;
+}
+
+.title-cursos {
+    margin: 10rem 0rem 0rem 23rem;
+    position: relative;
+}
+
+.title-cursos > h2 {
+    text-shadow: 0px 2px 2px white
+}
+
+.title-cursos > div {
+    position: absolute;
+    width: 12.4rem;
+    height: 25px;
+    background-color: red;
+    left: 0rem;
+    top: 3rem;
+    z-index: -1;
 }
 
 .cursos-section > div {
