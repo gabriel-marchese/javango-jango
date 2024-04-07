@@ -39,6 +39,7 @@ header > div > div > :nth-child(1) {
     left: 26rem;
     top: 17rem;
 }
+
 header > div > div > :nth-child(2) {
     margin-top: 15rem;
     font-weight: 700;
@@ -51,6 +52,7 @@ header > div > div > :nth-child(2) {
     left: 26rem;
     top: 20rem;
 }
+
 header > div > div > :nth-child(3) {
     margin-top: 15rem;
     font-weight: 700;
@@ -143,91 +145,29 @@ nav > img {
     align-items: center;    
 }
 
-hr {
-    width: 60vw;
-    border-radius: 80%;
+@media screen and (max-width: 1440px) {
+    .header-list-itens > ul > li {
+        padding: 1rem 0.3rem;
+        font-size: 1.1rem;
+    }
+
+
+header > div > div > :nth-child(1) {
+    font-size: 2.5rem;
+    left: 18rem;
+    top: 10rem;
 }
 
-
-@media screen and (max-width: 768px) {
-    nav {
-        width: 100vw;
-    }
-
-    .header-list-itens > ul {
-        gap: 0.8rem;
-        list-style: none;
-        font-size: 0.9rem;
-    }
-
-    .header-list-itens > div > button {
-        font-size: 0.8rem;
-    }
-
-
-    header > div > div > p {
-        margin-top: 50px;
-        width: 400px;
-        padding: 1.2rem;
-        color: rgb(212, 212, 212);
-        font-size: 1.4rem;
-        text-align: center;
-    }
+header > div > div > :nth-child(2) {
+    font-size: 2.5rem;
+    left: 18rem;
+    top: 13rem;
 }
 
-@media screen and (max-height: 900px) {
-    header {
-        height: 100vh;
-    }
-
-    header > div {
-        height: 100vh;
-    }
-
-    header > div > div > :nth-child(1) {
-        margin-top: 15rem;
-        font-weight: 700;
-        line-height: 3rem;
-        color: black;
-        font-size: 3rem;
-        padding: 3px 15px;
-        position: absolute;
-        background-color: white;
-        left: 17rem;
-        top: 17rem;
-    }
-    header > div > div > :nth-child(2) {
-        margin-top: 15rem;
-        font-weight: 700;
-        line-height: 3rem;
-        color: black;
-        font-size: 3rem;
-        position: absolute;
-        padding: 3px 15px;
-        background-color: white;
-        left: 17rem;
-        top: 20rem;
-    }
-    header > div > div > :nth-child(3) {
-        margin-top: 15rem;
-        font-weight: 700;
-        line-height: 3rem;
-        padding: 3px 15px;
-        color: black;
-        font-size: 3rem;
-        position: absolute;
-        background-color: white;
-        left: 17rem;
-        top: 23rem;
-    }
+header > div > div > :nth-child(3) {
+    font-size: 2.5rem;
+    left: 18rem;
+    top: 16rem;
 }
 
-@media screen and (max-height: 700px) {
-    header {
-        height: 100dvh;
-    }
-
-    header > div {
-        height: 100vh;
-    }
 }

@@ -48,7 +48,7 @@ h2 {
 
 .fundo-imagem2 {
     position: absolute;
-    right: -3rem;
+    right: 5rem;
     top: 24rem;
     rotate: -100deg;
     z-index: -10;
@@ -88,36 +88,36 @@ main > div > img {
     letter-spacing: -4px;
 }
 
-@media screen and (max-width: 768px) {
-    h2 {
-        font-size: 2.6rem;
+@media screen and (max-width: 1440px) {
+    .fundo-imagem {
+        left: 1rem;
+        top: 5rem;
     }
-
-    .text-section-home > h2 {
-        font-size: 2.6rem;
-    }
-    
-    main > div {
-        display: flex;
-        width: 100dvw;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    main > div > img {
+    .fundo-imagem > img {
         width: 300px;
-        margin: auto;
     }
 
-    .text-section-home {
-        align-items: center;
-        justify-content: center;
+    .fundo-imagem2 {
+        right: 2rem;
+        top: 24rem;
+    }
+    .fundo-imagem2 > img {
+        width: 300px;
     }
 
-    .text-section-home > p {
-        width: 90dvw;
-        letter-spacing: 1.5px;
-        line-height: 2rem;
-        margin-bottom: 1rem;
+    .fundo-imagem3 {
+        right: 11rem;
+        top: -5rem;
+    }
+    .fundo-imagem3 > img {
+        width: 200px;
+    }
+
+    .fundo-imagem4 {
+        left: 30rem;
+        top: 33rem;
+    }
+    .fundo-imagem4 > img {
+        width: 250px;
     }
 }

@@ -11,7 +11,7 @@ import Guitarra from '../images/foto_guitarra_palheta.png';
 const CursoSection = () => {
 
   return (
-    <>
+    <div className='cursos-content'>
         <div className='title-cursos'>
             <h2>Cursos</h2>
             <div></div>
@@ -67,7 +67,7 @@ const CursoSection = () => {
             </div>
             
         </section>
-    </>
+    </div>
   ) 
 }
 

@@ -5,6 +5,7 @@
     position: relative;
     z-index: 10;
     height: 60rem;
+    width: 100vw;
 }
 
 .place-background {
@@ -69,21 +70,35 @@
     scale: 1.1;
 }
 
-
-@media screen and (max-height: 900px) {
-    .our-place > :nth-child(3) > img {
-        right: 20rem;
-    }
-
-    .place-background {
-        left: 0;
+@media screen and (max-width: 1440px) {
+    .our-place  {
+        height: 55rem;
     }
 
     .our-place > h2 {
-        left: 12.2rem;
+        left: 13rem;
+        font-size: 3.6rem;
+    }
+
+    .our-place > :nth-child(3) > img {
+        width: 850px;
+        position: absolute;
+        top: 5rem;
+        right: 10rem;
+        z-index: 3;
+    }
+
+    .place-background {
+        height: 35rem;
     }
 
     .our-place > :nth-child(4) {
-        left: 12.2rem;
+        bottom: 10rem;
+        left: 13rem;
     }
+    
+    .our-place > :nth-child(4) > img {
+        width: 260px;
+    }
+
 }
