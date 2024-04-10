@@ -10,6 +10,7 @@ import Maps from '../components/Maps';
 import Baqueta from '../images/baqueta_vermelha.png';
 import Violao from '../images/violao-vermelho.png';
 import Palheta from '../images/palheta_vermelha.png';
+import Teachers from '../components/Teachers';
 
 const Home = () => {
   
@@ -42,6 +43,7 @@ const Home = () => {
      <CursoSection />
      <ImageBackground />
      <Place />
+     <Teachers />
      <Maps />
      <Footer />
     </>

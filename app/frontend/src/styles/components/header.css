@@ -148,26 +148,33 @@ nav > img {
 @media screen and (max-width: 1440px) {
     .header-list-itens > ul > li {
         padding: 1rem 0.3rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
+    nav {
+        padding: 1rem 8rem;
+    }
 
-header > div > div > :nth-child(1) {
-    font-size: 2.5rem;
-    left: 18rem;
-    top: 10rem;
-}
+    nav > img {
+        width: 70px;
+        opacity: 1;
+    }
 
-header > div > div > :nth-child(2) {
-    font-size: 2.5rem;
-    left: 18rem;
-    top: 13rem;
-}
+    header > div > div > :nth-child(1) {
+        font-size: 2.5rem;
+        left: 18rem;
+        top: 10rem;
+    }
 
-header > div > div > :nth-child(3) {
-    font-size: 2.5rem;
-    left: 18rem;
-    top: 16rem;
-}
+    header > div > div > :nth-child(2) {
+        font-size: 2.5rem;
+        left: 18rem;
+        top: 13rem;
+    }
 
+    header > div > div > :nth-child(3) {
+        font-size: 2.5rem;
+        left: 18rem;
+        top: 16rem;
+    }
 }
