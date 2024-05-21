@@ -28,15 +28,17 @@ const Teachers = () => {
         <div></div>
         <div>
             <img src={ Seta } onClick={leftArrowMove} alt="" />
-            {
-                teacherData[selected].aula.map((teacher) => (
-                    <div className='teacher'>
-                        <img src={ teacher.image } alt="" />
-                        <h4>{ teacher.name }</h4>
-                        <p>{ teacher.instrument }</p>
-                    </div>
-                ))
-            }
+            <div className='teacher-display'>
+                {
+                    teacherData[selected].aula.map((teacher) => (
+                        <div className='teacher'>
+                            <img src={ teacher.image } alt="" />
+                            <h4>{ teacher.name }</h4>
+                            <p>{ teacher.instrument }</p>
+                        </div>
+                    ))
+                }
+            </div>
             <img src={ Seta } onClick={rightArrowMove} alt="" />
         </div>
         <div className='teachers-change'>

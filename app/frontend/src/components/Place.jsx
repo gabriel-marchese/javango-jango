@@ -7,10 +7,12 @@ const Place = () => {
 
   return (
     <section className='our-place'>
-        <div className='place-background'></div>
-        <h2>ESTRUTURA, CONFORTO, MÚSICA...</h2>
-        <div>
-            <img src={ imagem1 } alt="" />
+        <div className='our-place-section'>
+          <div className='place-background'></div>
+          <h2>ESTRUTURA, CONFORTO, MÚSICA...</h2>
+          <div>
+              <img src={ imagem1 } alt="" />
+          </div>
         </div>
         <div>
             <img src={ imagem2 } alt="" />

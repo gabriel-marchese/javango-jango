@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles/pages/userHome.css'
 import HeaderUser from '../components/HeaderUser';
 import Icon from '../images/icon-facebook.png';
-import Logo from '../images/logo-javango.jpg'
+import Logo from '../images/logo-javango.png'
 import Insta from '../images/icon-instagram.png';
 import Metro from '../images/icon-metronomo.png';
 import Nota from '../images/icon-nota.png';

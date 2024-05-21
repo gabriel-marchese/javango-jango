@@ -8,16 +8,18 @@
     width: 100vw;
 }
 
+
 .place-background {
     width: 100vw;
     height: 40rem;
+    left: 0;
     top: 0;
     background-color: rgb(163, 35, 35);
     position: absolute;
     z-index: 1;
 }
 
-.our-place > h2 {
+.our-place-section > h2 {
     width: 340px;
     padding: 0 8px;
     font-size: 4rem;
@@ -29,7 +31,7 @@
     left: 29rem;
 }
 
-.our-place > :nth-child(3) > img {
+.our-place-section > :nth-child(3) > img {
     width: 1000px;
     position: absolute;
     top: 5rem;
@@ -38,14 +40,14 @@
 }
 
 
-.our-place > :nth-child(4) {
+.our-place > :nth-child(2) {
     display: flex;
     position: absolute;
     bottom: 10rem;
     left: 29rem;
 }
 
-.our-place > :nth-child(4) > img {
+.our-place > :nth-child(2) > img {
     width: 300px;
     margin-right: 15px;
     z-index: 7;
@@ -73,6 +75,10 @@
 @media screen and (max-width: 1440px) {
     .our-place  {
         height: 55rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .our-place > h2 {
@@ -101,4 +107,52 @@
         width: 260px;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    .our-place {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .place-background {
+        height: 15rem;
+    }
+
+    .our-place-section > h2 {
+        width: 200px;
+        font-size: 2rem;
+        line-height: 1.8rem;
+        top: 6rem;
+        left: 0.5rem;
+    }
+
+    .our-place-section > :nth-child(3) > img {
+        width: 350px;
+        position: absolute;
+        top: 5rem;
+        left: 2.5rem;
+        z-index: 3;
+    }
+
+    .our-place > :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 25rem;
+        margin-bottom: 3rem;
+        top: 0;
+        left: 0;
+    }
+    
+    .our-place > :nth-child(2) > img {
+        width: 250px;
+        margin-top: 1rem;
+        z-index: 7;
+    }
+
+    .our-place > a {
+        font-size: 1rem;
+        margin-bottom: 3rem 0;
+    }
 }

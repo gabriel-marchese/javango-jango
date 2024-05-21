@@ -65,8 +65,8 @@ const CursoSection = () => {
                 <img src={ FundoImagem } alt="Palheta Pontilhada" />
                 <img src={ Guitarra } alt="Foto de uma bateria acústica em forma de palheta" />
             </div>
-            
         </section>
+        <a href="#">Saiba Mais</a>
     </div>
   ) 
 }

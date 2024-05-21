@@ -121,3 +121,35 @@ main > div > img {
         width: 250px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .section-home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fundo-imagem, .fundo-imagem2, .fundo-imagem3, .fundo-imagem4 {
+        display: none;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .text-section-home > p {
+        width: 350px;
+        letter-spacing: 1.2px;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .text-section-home > h2 {
+        font-size: 2.3rem;
+        letter-spacing: -4px;
+    }
+
+    .text-section-home {
+        align-items: center;
+    }
+}

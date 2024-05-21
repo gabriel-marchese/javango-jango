@@ -38,6 +38,10 @@
     rotate: 180deg;
 }
 
+.teacher-display {
+    display: flex;
+}
+
 .teacher {
     display: flex;
     flex-direction: column;
@@ -91,5 +95,64 @@
     
     .teachers-section > :nth-child(2) {
         left: 12.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .teachers-section > h3 {
+        margin-left: 3rem;
+        margin-top: 10rem;
+        font-size: 2rem;
+    }
+
+    .teachers-section > :nth-child(2) {
+        width: 200px;
+        height: 30px;
+        left: 6rem;
+        top: 11.5rem;
+    }
+
+    .teachers-section > :nth-child(3) {
+        display: flex;
+        margin-top: 2rem;
+        gap: 0rem;
+    }
+
+    .teacher {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem;
+        align-items: center;
+    }
+    
+    .teacher > img {
+        width: 140px;
+    }
+    
+    .teacher > h4 {
+        color: #ce100d;
+        font-size: 1.3rem;
+    }
+    
+    .teacher > p {
+        color: rgb(65, 65, 65);
+        letter-spacing: 2px;
+    }
+
+    .teacher-display {
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+    }
+    
+    .teachers-section > :nth-child(3) > img {
+        height: 40px;
+    }
+    
+    .teachers-change {
+        display: flex;
+        margin-bottom: 4rem;
+        margin-top: 1rem;
+        gap: 1rem;
     }
 }

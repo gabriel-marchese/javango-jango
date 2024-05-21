@@ -18,6 +18,7 @@ footer > div {
 footer > section {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: space-around;
     margin: 0 25rem;
 }
@@ -46,9 +47,17 @@ footer > div > p {
 
 .social-medias {
     gap: 2rem;
+    display: flex;
+    align-items: center;
 }
 
+.social-medias > img:hover {
+    scale: 1.1;
+}
+
+
 .social-medias > img {
+    transition: all 300ms;
     width: 40px;
 }
 
@@ -75,12 +84,48 @@ footer > p {
     align-self: center;
 }
 
-@media screen and (max-width: 768px) {
-    footer {
-        width: 100dvw;
+@media screen and (max-width: 600px) {
+    footer > div {
+        margin: 0 0rem;
     }
 
+    footer > section {
+        margin: 0 0rem;
+    }
+
+    footer > section > div {
+        width: 110px;
+    }
+
+    footer > section > div > h4 {
+        margin: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    footer > section > div > p {
+        font-size: 0.9rem;
+        margin: 0.5rem;
+    }
+    
+    footer > section > div {
+        margin-bottom: 0.5rem;
+    }
+    
+    footer > div > p {
+        font-size: 1.2rem;
+    }
+    
+    .social-medias {
+        gap: 1rem;
+    }
+    
     footer > :nth-child(2) {
-        width: 70dvw;
+        width: 300px;
+    }
+    
+    footer > p {
+        color: rgba(245, 245, 245, 0.726);
+        font-size: 0.9rem;
+        align-self: center;
     }
 }

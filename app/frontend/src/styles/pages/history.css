@@ -1,0 +1,366 @@
+.history-section {
+    display: flex;
+    align-items: flex-start;
+    width: 100vw;
+}
+
+.title-history {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20rem;
+    position: relative;
+}
+
+.title-history > :nth-child(1) {
+    position: absolute;
+    left: 22rem;
+    font-size: 3rem;
+}
+.title-history > :nth-child(2) {
+    position: absolute;
+    left: 22rem;
+    font-size: 4rem;
+    margin-top: 6rem;
+}
+
+.title-history > :nth-child(3) {
+    width: 20px;
+    height: 90px;
+    background-color: rgb(219, 9, 9);
+    position: absolute;
+    left: 20.6rem;
+    top: -3.1rem;
+} 
+
+.history-section > :nth-child(3) {
+    position: absolute;
+    top: 6rem;
+    right: 13rem;
+}
+
+.history-section > :nth-child(3) > img {
+    width: 200px;
+    rotate: -35deg;
+}
+
+
+.history-section > :nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    align-items: flex-end;
+    margin-left: 40rem;
+}
+
+.history-section > :nth-child(4) > h3 {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: rgb(168, 5, 5);
+}
+
+.history-section > :nth-child(4) > p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.history-section > :nth-child(5) {
+    display: flex;
+    width: 300px;
+    height: 750px;
+    background: linear-gradient(to top, rgb(85, 0, 0), rgb(170, 40, 40));
+    position: absolute;
+    z-index: -99;
+}
+
+.history-section > :nth-child(6) {
+    position: absolute;
+    top: 40rem;
+    left: 26rem;
+    z-index: -99;
+}
+
+.history-section > :nth-child(6) > img {
+    width: 330px;
+}
+
+.history-section > a {
+    margin-top: 8rem;
+    align-self: center;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    background-color: rgb(37, 37, 37);
+    color: rgb(230, 13, 13);
+    text-decoration: none;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    box-shadow: 6px 6px rgb(230, 13, 13);
+    transition: all 300ms;
+    margin-bottom: 2rem;
+}
+
+.history-section > a:hover {
+    box-shadow: 0px 0px;
+    scale: 1.1;
+}
+
+.video-content {
+    margin: 8rem 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.javango {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+    width: 100vw;
+}
+
+.javango > :nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    position: relative;
+}
+
+.javango > :nth-child(1) > h2 {
+    text-transform: uppercase;
+    text-shadow: 2px 2px white;
+    letter-spacing: -7px;
+}
+
+.javango > :nth-child(1) > div {
+    width: 250px;
+    height: 30px;
+    background-color: rgb(184, 7, 7);
+    position: absolute;
+    top: 2.5rem;
+    left: 7rem;
+    z-index: -99;
+}
+
+.javango > :nth-child(1) > h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.javango > :nth-child(1) > h3 > span {
+    color: rgb(201, 1, 1);
+}
+
+.javango > :nth-child(1) > p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 1.7px;
+
+}
+
+.javango > :nth-child(2) > img {
+    width: 400px;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .title-history {
+        margin-top: 15rem;
+    }
+
+    .title-history > :nth-child(1) {
+        position: absolute;
+        left: 17rem;
+        font-size: 3rem;
+    }
+
+    .title-history > :nth-child(2) {
+        position: absolute;
+        left: 17rem;
+        font-size: 4rem;
+        margin-top: 6rem;
+    }
+
+    .title-history > :nth-child(3) {
+        left: 15.6rem;
+        top: -3.1rem;
+    }
+
+    .history-section > :nth-child(5) {
+        width: 200px;
+        height: 550px;
+    }
+
+    .history-section > :nth-child(4) {
+        width: 800px;
+        margin-left: 30rem;
+    }
+    
+    .history-section > :nth-child(4) > h3 {
+        font-size: 1.8rem;
+    }
+    
+    .history-section > :nth-child(4) > p {
+        font-size: 1rem;
+    }
+
+    .history-section > :nth-child(3) {
+        top: 5rem;
+        right: 11rem;
+    }
+    
+    .history-section > :nth-child(3) > img {
+        width: 140px;
+    }
+    
+    .history-section > :nth-child(6) {
+        top: 30rem;
+        left: 13rem;
+    }
+    
+    .history-section > :nth-child(6) > img {
+        width: 300px;
+    }
+
+    .history-section > a {
+        padding: 3px 23px;
+        margin-bottom: 0rem;
+    }
+
+    .javango {
+        gap: 6rem;
+    }
+
+    .javango > :nth-child(1) {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    header {
+        height: auto;
+    }
+
+    .title-history {
+        margin-top: 15rem;
+    }
+
+    .title-history > :nth-child(1) {
+        position: absolute;
+        left: 3rem;
+        font-size: 2.7rem;
+    }
+
+    .title-history > :nth-child(2) {
+        position: absolute;
+        left: 3rem;
+        font-size: 3.2rem;
+        margin-top: 6rem;
+    }
+
+    .title-history > :nth-child(3) {
+        left: 1.6rem;
+        top: -2.3rem;
+    }
+
+    .history-section > :nth-child(5) {
+        width: 200px;
+        height: 550px;
+        display: none;
+    }
+
+    .history-section > :nth-child(4) {
+        width: 90vw;
+        margin: auto;
+        margin-top: 8rem;
+    }
+    
+    .history-section > :nth-child(4) > h3 {
+        font-size: 1.3rem;
+        text-align: right;
+    }
+    
+    .history-section > :nth-child(4) > p {
+        font-size: 1rem;
+    }
+
+    .history-section > :nth-child(3) {
+        top: 7rem;
+        right: 5rem;
+    }
+    
+    .history-section > :nth-child(3) > img {
+        width: 100px;
+    }
+    
+    .history-section > :nth-child(6) {
+        top: 30rem;
+        left: 13rem;
+    }
+    
+    .history-section > :nth-child(6) > img {
+        width: 300px;
+        display: none;
+    }
+
+    .history-section > a {
+        margin-top: 3rem;
+        align-self: center;
+        cursor: pointer;
+        border: none;
+        font-weight: 700;
+        font-size: 1.1rem;
+        background-color: rgb(37, 37, 37);
+        color: rgb(230, 13, 13);
+        text-decoration: none;
+        padding: 0px 20px;
+        text-transform: uppercase;
+        box-shadow: 6px 6px rgb(230, 13, 13);
+        transition: all 300ms;
+        margin-bottom: 0rem;
+    }
+
+    .video-content {
+        margin: 4rem 0;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-content > iframe {
+        width: 90vw;
+        height: 230px;
+    }
+
+    .javango {
+        gap: 0rem;
+        width: 90vw;
+        margin: auto;
+    }
+    
+    .javango > :nth-child(1) > div {
+        width: 180px;
+        top: 1.7rem;
+        left: 3.5rem;
+    }
+    
+    .javango > :nth-child(1) > h3 {
+        font-size: 2rem;
+    }
+    
+    
+    .javango > :nth-child(1) > p {
+        font-size: 1.1rem;
+    }
+    
+    .javango > :nth-child(2){
+        display: none;
+    }
+}

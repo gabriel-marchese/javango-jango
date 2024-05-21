@@ -10,6 +10,12 @@ import CreateMusic from './pages/CreateMusic';
 import Professors from './pages/Professors';
 import Music from './pages/Music';
 import UserDetails from './pages/UserDetails';
+import History from './pages/History';
+import Courses from './pages/Courses';
+import Structure from './pages/Structure';
+import Teachers from './pages/Teachers';
+import Events from './pages/Events';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -23,6 +29,12 @@ function App() {
       <Route path="/professors" element = { <Professors/> }></Route>
       <Route path="/music/:id" element = { <Music /> }></Route>
       <Route path="/user/:id" element = { <UserDetails /> }></Route>
+      <Route path="/history" element={ <History /> } />
+      <Route path="/courses" element={ <Courses /> } />
+      <Route path="/structure" element={ <Structure /> } />
+      <Route path="/teachers" element={ <Teachers /> } />
+      <Route path="/events" element={ <Events /> } />
+      <Route path="/contact" element={ <Contact /> } />
     </Routes>
   );
 }
