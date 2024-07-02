@@ -1,0 +1,87 @@
+.teachers-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100vw;
+}
+
+.teachers-container > h3 {
+    margin-top: 15rem;
+    font-size: 3rem;
+    display: flex;
+    text-shadow: 0px 2px 2px white;
+    margin-left: 25rem;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+.teachers-container > :nth-child(3) {
+    width: 400px;
+    height: 35px;
+    background-color: rgb(151, 9, 9);
+    position: absolute;
+    top: 17.5rem;
+    left: 10rem;
+    z-index: -99;
+}
+
+.teachers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teachers-item {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.teachers-item:hover {
+    scale: 1.1;
+}
+
+.teachers-item > div > img {
+    width: 300px;
+}
+
+.teachers-item > div {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teachers-item > div > h5 {
+    font-size: 1.3rem;
+    color: rgb(175, 14, 14);
+    text-decoration: none;
+}
+
+.teachers-item > div > p {
+    color: rgb(75, 75, 75);
+    letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .teachers-container > h3 {
+        font-size: 2.5rem;
+        margin-top: 12rem;
+        margin-left: 12rem;
+    }
+    .teachers-container > :nth-child(3) {
+        width: 300px;
+        top: 14rem;
+        left: 5rem;
+    }
+    .teachers-item {
+        width: 300px;
+        height: 400px;
+    }
+    .teachers-list {
+        margin-top: 5rem;
+    }
+}

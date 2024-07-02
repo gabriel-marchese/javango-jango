@@ -16,6 +16,8 @@ import Structure from './pages/Structure';
 import Teachers from './pages/Teachers';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
+import TeacherDetail from './pages/TeacherDetail';
+import CourseDetail from './pages/CourseDetail';
 
 function App() {
   return (
@@ -31,8 +33,10 @@ function App() {
       <Route path="/user/:id" element = { <UserDetails /> }></Route>
       <Route path="/history" element={ <History /> } />
       <Route path="/courses" element={ <Courses /> } />
+      <Route path="/courses/:instrument" element={ <CourseDetail /> } />
       <Route path="/structure" element={ <Structure /> } />
       <Route path="/teachers" element={ <Teachers /> } />
+      <Route path="/teachers/:name" element={ <TeacherDetail /> } />
       <Route path="/events" element={ <Events /> } />
       <Route path="/contact" element={ <Contact /> } />
     </Routes>

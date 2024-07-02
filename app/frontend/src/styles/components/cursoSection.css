@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     width: 75vw;
-    height: 60rem;
+    height: max-content;
 }
 
 .title-cursos {
@@ -96,7 +96,7 @@
 .cursos-content > a {
     cursor: pointer;
     border: none;
-    margin-top: 20px;
+    margin-top: 60px;
     font-weight: 700;
     font-size: 1.3rem;
     background-color: rgb(77, 77, 77);
@@ -117,7 +117,7 @@
 @media screen and (max-width: 1900px) {
     .cursos-section {
         width: 85vw;
-        height: 100vh;
+        height: max-content;
     }
 
     .cursos-section > div {
@@ -139,12 +139,16 @@
     .cursos-section > div > div > h2 {
         font-size: 3.5rem;
     }
+
+    .cursos-section {
+        height: max-content;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .cursos-section {
         width: 100vw;
-        height:75vh;
+        height: max-content;
     }
     
     .title-cursos {

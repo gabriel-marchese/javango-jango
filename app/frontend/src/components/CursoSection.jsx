@@ -6,7 +6,7 @@ import FundoImagem2 from '../images/Fundo_Palheta_2.png';
 import FundoImagem3 from '../images/Fundo_Palheta_3.png';
 import Bateria from '../images/foto_bateria_palheta.png';
 import Guitarra from '../images/foto_guitarra_palheta.png';
-
+import { Link } from 'react-router-dom';
 
 const CursoSection = () => {
 
@@ -66,7 +66,7 @@ const CursoSection = () => {
                 <img src={ Guitarra } alt="Foto de uma bateria acústica em forma de palheta" />
             </div>
         </section>
-        <a href="#">Saiba Mais</a>
+        <Link to="/courses" replace={true}>Saiba Mais</Link>
     </div>
   ) 
 }

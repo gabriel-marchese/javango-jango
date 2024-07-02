@@ -4,6 +4,7 @@ import { teacherData } from '../data/teacherData';
 import Seta from '../images/seta-direita1.png';
 import Nota from '../images/nota-musical.png';
 import Circle from '../images/circulo1.png';
+import { Link } from 'react-router-dom';
 
 const Teachers = () => {
   const [selected, setSelected] = useState(0);
@@ -45,7 +46,7 @@ const Teachers = () => {
             <img src={ selected === 0 ? Nota : Circle } alt="" />
             <img src={ selected === 1 ? Nota : Circle } alt="" />
         </div>
-        <a href="#">Veja Mais</a>
+        <Link to="/teachers">Veja Mais</Link>
     </section>
   ) 
 }

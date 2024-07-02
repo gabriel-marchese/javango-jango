@@ -1,0 +1,92 @@
+.courses-container {
+    display: flex;
+    width: 100vw;
+    align-items: flex-start;
+}
+
+.courses-container > h3 {
+    margin-top: 15rem;
+    font-size: 3rem;
+    display: flex;
+    text-shadow: 0px 2px 2px white;
+    margin-left: 25rem;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+
+.courses-container > :nth-child(3) {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(160, 13, 13);
+    position: absolute;
+    top: 17rem;
+    left: 28rem;
+    z-index: -99;
+}
+
+.courses-list {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-item {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.course-item:hover {
+    scale: 1.1;
+}
+
+.course-item > div > img {
+    width: 300px;
+}
+
+.course-item > div {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-item > div > h5 {
+    font-size: 1.3rem;
+    color: rgb(175, 14, 14);
+    text-decoration: none;
+}
+
+.course-item > div > p {
+    color: rgb(75, 75, 75);
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .courses-container > h3 {
+        margin-top: 12rem;
+        font-size: 2.5rem;
+        margin-left: 7rem;
+    }
+    
+    .courses-container > :nth-child(3) {
+        width: 150px;
+        top: 14rem;
+        left: 9rem;
+    }
+
+    .courses-list {
+        margin-top: 5rem;
+    }
+    
+    .course-item {
+        width: 300px;
+        height: 400px;
+    }
+}
+

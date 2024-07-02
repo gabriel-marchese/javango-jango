@@ -1,0 +1,33 @@
+.teacher-section {
+    display: flex;
+    align-items: flex-start;
+    width: 100vw;
+}
+
+@media screen and (max-width: 600px) {
+    .course-detail > :nth-child(3) > img {
+        width: 350px;
+    }
+    
+    .course-detail > :nth-child(3) {
+        flex-direction: column-reverse;
+        width: 100vw;
+        margin-bottom: 10rem;
+    }
+
+    .course-detail > :nth-child(3) > h1 {
+        align-self: center;
+        margin-top: 5rem;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    iframe {
+        width: 500px;
+        height: 280px;
+    }
+
+    .video-description {
+        height: 450px;
+    }
+}

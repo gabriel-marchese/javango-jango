@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/components/place.css'
 import imagem1 from '../images/image-background2.jpg'
 import imagem2 from '../images/guitarra.jpg'
+import { Link } from 'react-router-dom';
 
 const Place = () => {
 
@@ -19,7 +20,7 @@ const Place = () => {
             <img src={ imagem2 } alt="" />
             <img src={ imagem2 } alt="" />
         </div>
-        <a href="#">Veja Mais</a>
+        <Link to="/structure">Veja Mais</Link>
     </section>
   ) 
 }

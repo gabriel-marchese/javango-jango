@@ -1,13 +1,37 @@
-import React from 'react';
+// src/pages/Teachers.js
+import React, { useState } from 'react';
 import Header from '../components/Header';
-import '../styles/pages/courses.css'
-
+import { useNavigate } from 'react-router-dom';
+import '../styles/pages/courses.css';
+import { courseData } from '../data/couseData';
+import Footer from '../components/Footer';
 
 const Courses = () => {
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  const navigate = useNavigate();
+
+  const handleSelectCourse = (course) => {
+    setSelectedCourse(course);
+    navigate(`/courses/${course.instrument}`, { state: { course } });
+  };
 
   return (
-    <section>
-        <Header />
+    <section className='courses-container'>
+      <Header />
+      <h3>Aulas</h3>
+      <div></div>
+      <div className='courses-list'>
+        {courseData.map((course) => (
+            <div key={course.name} className='course-item'>
+              <div onClick={() => handleSelectCourse(course)}>
+                <img src={course.image} alt={course.name} />
+                <h5>{course.instrument}</h5>
+                <p>{course.name}</p>
+              </div>
+            </div>
+        ))}
+      </div>
+      <Footer />
     </section>
   );
 };
