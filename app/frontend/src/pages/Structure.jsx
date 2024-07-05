@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Image from '../images/image-background.jpg';
 import Nota from '../images/icon-nota.png';
@@ -8,6 +8,10 @@ import Footer from '../components/Footer';
 
 
 const Structure = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className='structure-section'>

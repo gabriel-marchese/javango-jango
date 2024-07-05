@@ -1,5 +1,5 @@
 // src/pages/Teachers.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import { useNavigate } from 'react-router-dom';
 import '../styles/pages/courses.css';
@@ -14,6 +14,10 @@ const Courses = () => {
     setSelectedCourse(course);
     navigate(`/courses/${course.instrument}`, { state: { course } });
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className='courses-container'>

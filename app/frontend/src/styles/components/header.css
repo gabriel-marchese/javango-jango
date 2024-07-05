@@ -1,17 +1,20 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: rgb(212, 212, 212);
+.test-header {
     width: 100vw;
-    padding: 2rem 12rem;
-    position: fixed;
+    z-index: 999999;
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(19, 19, 19, 0.11));
     backdrop-filter: blur(5px);
+    position: fixed;
     z-index: 99;
+    padding: 1rem 4rem;
 }
 
-nav > a > img {
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container > a > img {
     width: 90px;
     opacity: 1;
 }
@@ -82,78 +85,72 @@ nav > a > img {
     align-items: center;    
 }
 
+.buguer-menu {
+    width: 1.8rem;
+    height: 1.3rem;
+}
+
+.content-burguer {
+    background-color: rgb(34, 34, 34);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 1440px) {
     .header-list-itens > ul > li {
         padding: 1rem 0.3rem;
         font-size: 1rem;
     }
 
-    nav {
+    .header-container {
         padding: 1rem 8rem;
     }
 
-    nav > img {
+    .header-container > img {
         width: 70px;
         opacity: 1;
-    }
-
-    header > div > div > :nth-child(1) {
-        font-size: 2.5rem;
-        left: 18rem;
-        top: 10rem;
-    }
-
-    header > div > div > :nth-child(2) {
-        font-size: 2.5rem;
-        left: 18rem;
-        top: 13rem;
-    }
-
-    header > div > div > :nth-child(3) {
-        font-size: 2.5rem;
-        left: 18rem;
-        top: 16rem;
     }
 }
 
 
-@media screen and (max-width: 600px) {
-    header {
-        height: 60vh;
-        background-position: center center;
+@media screen and (max-width: 768px) {
+
+    .test-header {
+        padding: 0;
+        position: fixed;
+        display: flex;
+    }
+
+    .header-container {
+        height: 7rem;
+        display: flex;
+        padding: 0rem;
+    }
+
+    .content-burguer {
+        position: fixed;
+        height: 2.3rem;
+        top: 2rem;
+        right: 2rem;
+        z-index: 99;
     }
 
     header > div {
-        height: 60vh;
+        height: 2rem;
     }
 
-    .header-list-itens{
-        display: none;
+    .header-list-itens > ul {
+        flex-direction: column;
+        background-color: rgb(34, 34, 34);
+        padding: 1.5rem;
+        margin-top: 2rem;
     }
 
     nav {
-        padding: 1.3rem 2rem;
-    }
-
-    header > div > div > :nth-child(1) {
-        font-size: 1.7rem;
-        left: 3rem;
-        top: 3rem;
-        line-height: 2rem;
-    }
-
-    header > div > div > :nth-child(2) {
-        font-size: 1.7rem;
-        line-height: 2rem;
-        left: 3rem;
-        top: 5rem;
-    }
-
-    header > div > div > :nth-child(3) {
-        font-size: 1.7rem;
-        line-height: 2rem;
-        left: 3rem;
-        top: 7rem;
+        padding: 0.3rem;
+        position: absolute;
+        top: 0rem;
+        right: 2rem;
     }
 }
 

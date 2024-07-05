@@ -68,14 +68,14 @@
 
 @media screen and (max-width: 600px) {
     .teachers-container > h3 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         margin-top: 12rem;
-        margin-left: 12rem;
+        margin-left: 7rem;
     }
     .teachers-container > :nth-child(3) {
-        width: 300px;
+        width: 250px;
         top: 14rem;
-        left: 5rem;
+        left: 2rem;
     }
     .teachers-item {
         width: 300px;

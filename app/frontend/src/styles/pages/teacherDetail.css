@@ -4,7 +4,7 @@
     width: 100vw;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .course-detail > :nth-child(3) > img {
         width: 350px;
     }
@@ -18,7 +18,7 @@
     .course-detail > :nth-child(3) > h1 {
         align-self: center;
         margin-top: 5rem;
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
     }
 
@@ -29,5 +29,9 @@
 
     .video-description {
         height: 450px;
+    }
+
+    .course-detail > a {
+        font-size: 1rem;
     }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import '../styles/pages/home.css'
 import SideImage from '../images/side-image-guitar.jpg'
@@ -15,6 +15,10 @@ import Introduction from '../components/Introduction';
 
 const Home = () => {
   
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
      <Header />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from '../images/side-image-guitar.jpg';
@@ -8,6 +8,10 @@ import '../styles/pages/history.css';
 
 
 const History = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className='history-section'>

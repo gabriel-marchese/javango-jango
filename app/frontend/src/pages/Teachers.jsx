@@ -1,5 +1,5 @@
 // src/pages/Teachers.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import { useNavigate } from 'react-router-dom';
 import '../styles/pages/teachers.css';
@@ -14,6 +14,10 @@ const Teachers = () => {
     setSelectedProfessor(professor);
     navigate(`/teachers/${professor.name}`, { state: { professor } });
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className='teachers-container'>

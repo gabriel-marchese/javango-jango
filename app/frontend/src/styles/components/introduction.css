@@ -78,22 +78,25 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .introduction-section > div > :nth-child(1) {
-        font-size: 2.3rem;
-        left: 2rem;
+        font-size: 2rem;
+        left: 1rem;
         top: 5rem;
+        padding: 1px 7px;  
     }
     
     .introduction-section > div > :nth-child(2) {
-        font-size: 2.3rem;
-        left: 2rem;
+        font-size: 2rem;
+        left: 1rem;
         top: 8rem;
+        padding: 1px 7px;
     }
     
     .introduction-section > div > :nth-child(3) {
-        font-size: 2.3rem;
-        left: 2rem;
+        font-size: 2rem;
+        left: 1rem;
         top: 11rem;
+        padding: 1px 7px;
     }
 }

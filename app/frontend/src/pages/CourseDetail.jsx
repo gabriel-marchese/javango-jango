@@ -1,17 +1,23 @@
 // src/pages/TeacherDetail.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/pages/courseDetail.css';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 const CourseDetail = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const location = useLocation();
   const { course } = location.state || {};
 
   if (!course) {
-    return <div>Selecione um professor para ver os detalhes</div>;
+    return <div>Selecione um Curso para ver os detalhes</div>;
   }
+
 
   return (
     <div className='course-detail'>

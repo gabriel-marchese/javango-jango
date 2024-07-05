@@ -1,11 +1,16 @@
 // src/pages/TeacherDetail.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import '../styles/pages/teacherDetail.css';
 
 const TeacherDetail = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const location = useLocation();
   const { professor } = location.state || {};
 

@@ -109,7 +109,7 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .our-place {
         flex-direction: column;
         position: relative;
@@ -128,7 +128,7 @@
     }
 
     .our-place-section > :nth-child(3) > img {
-        width: 350px;
+        width: 300px;
         position: absolute;
         top: 5rem;
         left: 2.5rem;

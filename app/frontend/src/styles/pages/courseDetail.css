@@ -105,15 +105,20 @@
 
     .course-detail > :nth-child(3) > h1 {
         align-self: center;
+        font-size: 3rem;
         margin-top: 6rem;
     }
 
     iframe {
-        width: 500px;
-        height: 280px;
+        width: 95vw;
+        height: 230px
     }
 
     .video-description {
         height: 450px;
+    }
+
+    .course-detail > a {
+        font-size: 1rem;
     }
 }
