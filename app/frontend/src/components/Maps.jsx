@@ -12,7 +12,7 @@ const Maps = () => {
           <img src={ Localiza } alt="" />
         </div>
         <img src={ Seta } alt="" />
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.6726455647836!2d-46.633723538806876!3d-23.47465377732182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7d5959982a1%3A0xcfd138e8a5a3c99c!2sJavango%20Jango!5e0!3m2!1spt-BR!2sbr!4v1710379452268!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18055.419580894573!2d-46.63151452419303!3d-23.474786254011445!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7d5959982a1%3A0xcfd138e8a5a3c99c!2sJavango%20Jango!5e0!3m2!1spt-BR!2sbr!4v1720887267853!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   ) 
 }
