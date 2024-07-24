@@ -113,3 +113,33 @@ svg path {
     border: none;
     zoom: -20%;
 }
+
+@media screen and (max-width: 600px) {
+
+    .contact-section {
+    margin-top: 10rem;
+    }
+
+    .contact-section > :nth-child(1) > h3 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    }
+
+    .contact-section > :nth-child(1) > hr {
+    width: 200px;
+    }
+
+    .contact-section > :nth-child(1) > p {
+    text-align: center;
+    width: 500px;
+    letter-spacing: 1.5px;
+    color: rgb(34, 33, 33);
+    }
+
+    .contact-section > :nth-child(3) > iframe {
+    width: 500px;
+    height: 300px;
+    border: none;
+    zoom: -20%;
+    }
+}

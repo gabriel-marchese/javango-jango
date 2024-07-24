@@ -18,6 +18,7 @@ import Events from './pages/Events';
 import Contact from './pages/Contact';
 import TeacherDetail from './pages/TeacherDetail';
 import CourseDetail from './pages/CourseDetail';
+import EventDetail from './pages/EventDetail';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <Route path="/teachers" element={ <Teachers /> } />
       <Route path="/teachers/:name" element={ <TeacherDetail /> } />
       <Route path="/events" element={ <Events /> } />
+      <Route path="/events/:name" element={ <EventDetail /> } />
       <Route path="/contact" element={ <Contact /> } />
     </Routes>
   );
