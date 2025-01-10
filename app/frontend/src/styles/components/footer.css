@@ -51,12 +51,12 @@ footer > div > p {
     align-items: center;
 }
 
-.social-medias > img:hover {
+.social-medias > a > img:hover {
     scale: 1.1;
 }
 
 
-.social-medias > img {
+.social-medias > a > img {
     transition: all 300ms;
     width: 40px;
 }

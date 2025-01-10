@@ -16,7 +16,7 @@ export const teacherData = [
           },
           {
               name: "William",
-              fullname: "Luan Medeiros",
+              fullname: "William",
               instrument: "Guitarra/Violão",
               description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident esse laboriosam blanditiis iusto porro nesciunt aliquid libero distinctio, obcaecati minus sequi error, molestias necessitatibus harum nobis non. Amet, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident esse laboriosam blanditiis iusto porro nesciunt aliquid libeis?",
               image: William,
@@ -24,7 +24,7 @@ export const teacherData = [
           },
           {
               name: "Japa",
-              fullname: "Luan Medeiros",
+              fullname: "Japa",
               instrument: "Baixo",
               description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident esse laboriosam blanditiis iusto porro nesciunt aliquid libero distinctio, obcaecati minus sequi error, molestias necessitatibus harum nobis non. Amet, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident esse laboriosam blanditiis iusto porro nesciunt aliquid libeis?",
               image: Japa,
@@ -37,7 +37,7 @@ export const teacherData = [
 
             {
                 name: "Fulano",
-                fullname: "Luan Medeiros",
+                fullname: "Fulano",
                 instrument: "Canto",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident esse laboriosam blanditiis iusto porro nesciunt aliquid libero distinctio, obcaecati minus sequi error, molestias necessitatibus harum nobis non. Amet, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident esse laboriosam blanditiis iusto porro nesciunt aliquid libeis?",
                 image: Japa,
@@ -45,7 +45,7 @@ export const teacherData = [
             },
             {
                 name: "Fulano1",
-                fullname: "Luan Medeiros",
+                fullname: "Fulano1",
                 instrument: "Teclado/Piano",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident esse laboriosam blanditiis iusto porro nesciunt aliquid libero distinctio, obcaecati minus sequi error, molestias necessitatibus harum nobis non. Amet, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident esse laboriosam blanditiis iusto porro nesciunt aliquid libeis?",
                 image: Luan,
@@ -53,7 +53,7 @@ export const teacherData = [
             },
             {
                 name: "Fulano2",
-                fullname: "Luan Medeiros",
+                fullname: "Fulano2",
                 instrument: "Sopros",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident esse laboriosam blanditiis iusto porro nesciunt aliquid libero distinctio, obcaecati minus sequi error, molestias necessitatibus harum nobis non. Amet, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident esse laboriosam blanditiis iusto porro nesciunt aliquid libeis?",
                 image: William,

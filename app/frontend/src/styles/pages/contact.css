@@ -121,8 +121,12 @@ svg path {
     }
 
     .contact-section > :nth-child(1) > h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
+    }
+
+    .contact-section > :nth-child(1) {
+        width: 100dvw;
     }
 
     .contact-section > :nth-child(1) > hr {
@@ -131,15 +135,15 @@ svg path {
 
     .contact-section > :nth-child(1) > p {
     text-align: center;
-    width: 500px;
+    width: 80dvw;
     letter-spacing: 1.5px;
     color: rgb(34, 33, 33);
     }
 
     .contact-section > :nth-child(3) > iframe {
-    width: 500px;
-    height: 300px;
+    width: 90dvw;
+    height: 30dvh;
     border: none;
-    zoom: -20%;
+    zoom: 0%;
     }
 }

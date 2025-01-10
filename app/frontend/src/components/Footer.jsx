@@ -10,8 +10,8 @@ const Footer = () => {
         <div>
             <p>JavangoJango</p>
             <div className='social-medias'>
-                <img src={ Facebook } alt="Icone que leva para o facebook da javango jango" />
-                <img src={ Instagram } alt="Icone que leva para o instagram da javango jango" />
+                <a href="https://www.facebook.com/JavangoJango/" target="_blank" rel="noopener noreferrer"><img src={ Facebook } alt="Icone que leva para o facebook da javango jango" /></a>
+                <a href="https://www.instagram.com/javangojango/" target="_blank" rel="noopener noreferrer"><img src={ Instagram } alt="Icone que leva para o instagram da javango jango" /></a>
             </div>
         </div>
         <div></div>
