@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/pages/events.css'
 import { eventsData } from '../data/eventsData';
 import Footer from '../components/Footer';
-
+import WhatsappContact from '../components/WhatsappContact';
 
 const Events = () => {
 
@@ -43,6 +43,8 @@ const Events = () => {
           ))
         }
         </div>
+        <WhatsappContact />
+        <Footer />
     </section>
   );
 };

@@ -1,74 +1,71 @@
-import React from 'react';
-import '../styles/components/cursoSection.css'
-import FundoImagem from '../images/Fundo_Palheta.png';
-import FundoImagem1 from '../images/Fundo_Palheta_1.png';
-import FundoImagem2 from '../images/Fundo_Palheta_2.png';
-import FundoImagem3 from '../images/Fundo_Palheta_3.png';
-import Bateria from '../images/foto_bateria_palheta.png';
-import Guitarra from '../images/foto_guitarra_palheta.png';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../styles/components/cursoSection.css';
+import { courseData } from '../data/couseData';
 import { Link } from 'react-router-dom';
 
 const CursoSection = () => {
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  const navigate = useNavigate();
+
+  const handleSelectCourse = (course) => {
+    setSelectedCourse(course);
+    navigate(`/courses/${course.instrument}`, { state: { course } });
+  };
+
+  const handleMouseMove = (e, index) => {
+    const card = document.getElementById(`course-${index}`);
+    const fundo = document.getElementById("fundo-palheta");
+    const rect = card.getBoundingClientRect();
+
+    const x = e.clientX - rect.left; // Posição X do mouse dentro do card
+    const y = e.clientY - rect.top;  // Posição Y do mouse dentro do card
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const deltaX = (x - centerX) / centerX;
+    const deltaY = (y - centerY) / centerY;
+
+    const rotateX = deltaY * 10; // Rotação no eixo X
+    const rotateY = -deltaX * 10; // Rotação no eixo Y
+
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+  };
+
+  const handleMouseLeave = (index) => {
+    const card = document.getElementById(`course-${index}`);
+    card.style.transform = `rotateX(0deg) rotateY(0deg) scale(1)`;
+  };
 
   return (
     <div className='cursos-content'>
-        <div className='title-cursos'>
-            <h2>Cursos</h2>
-            <div></div>
-        </div>
-        <section className='cursos-section'>
+      <div className='title-cursos'>
+        <h2>Cursos</h2>
+        <div></div>
+      </div>
+      <section className='cursos-section'>
+        {courseData.map((course, index) => (
+          <div
+            key={course.name}
+            id={`course-${index}`}
+            onClick={() => handleSelectCourse(course)}
+            onMouseMove={(e) => handleMouseMove(e, index)}
+            onMouseLeave={() => handleMouseLeave(index)}
+            className="course-card"
+          >
             <div>
-                <div>
-                    <div className='color-ground'></div>
-                    <h2>Bateria</h2>
-                </div>
-                <img src={ FundoImagem } alt="Palheta Pontilhada" />
-                <img src={ Bateria } alt="Foto de uma bateria acústica em forma de palheta" />
+              <div className='color-ground'></div>
+              <h2>{course.instrument}</h2>
             </div>
-            <div>
-                <div>
-                    <div className='color-ground'></div>
-                    <h2>Guitarra</h2>
-                </div>
-                <img src={ FundoImagem1 } alt="Palheta Pontilhada" />
-                <img src={ Guitarra } alt="Foto de uma bateria acústica em forma de palheta" />
-            </div>
-            <div>
-                <div>
-                    <div className='color-ground'></div>
-                    <h2>Bateria</h2>
-                </div>
-                <img src={ FundoImagem2 } alt="Palheta Pontilhada" />
-                <img src={ Bateria } alt="Foto de uma bateria acústica em forma de palheta" />
-            </div>
-            <div>
-                <div>
-                    <div className='color-ground'></div>
-                    <h2>Guitarra</h2>
-                </div>
-                <img src={ FundoImagem3 } alt="Palheta Pontilhada" />
-                <img src={ Guitarra } alt="Foto de uma bateria acústica em forma de palheta" />
-            </div>
-            <div>
-                <div>
-                    <div className='color-ground'></div>
-                    <h2>Bateria</h2>
-                </div>
-                <img src={ FundoImagem } alt="Palheta Pontilhada" />
-                <img src={ Bateria } alt="Foto de uma bateria acústica em forma de palheta" />
-            </div>
-            <div>
-                <div>
-                    <div className='color-ground'></div>
-                    <h2>Guitarra</h2>
-                </div>
-                <img src={ FundoImagem } alt="Palheta Pontilhada" />
-                <img src={ Guitarra } alt="Foto de uma bateria acústica em forma de palheta" />
-            </div>
-        </section>
-        <Link to="/courses" replace={true}>Saiba Mais</Link>
+            <img src={course.fundo} alt="Palheta Pontilhada" />
+            <img id="fundo-palheta" src={course.image} alt="Foto de um instrumento" />
+          </div>
+        ))}
+      </section>
+      <Link to="/courses" replace={true}>Saiba Mais</Link>
     </div>
-  ) 
-}
+  );
+};
 
 export default CursoSection;

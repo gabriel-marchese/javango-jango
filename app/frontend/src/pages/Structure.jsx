@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Image from '../images/image-background.jpg';
 import Nota from '../images/icon-nota.png';
-
+import WhatsappContact from '../components/WhatsappContact';
 import '../styles/pages/structure.css';
 import Footer from '../components/Footer';
-
+import { Link } from 'react-router-dom';
 
 const Structure = () => {
 
@@ -57,8 +57,9 @@ const Structure = () => {
             <img src={ Image } alt="" />
           </div>
         </section>
-        <a href="">Marque sua aula experimental!</a>
+        <Link to="/contact" replace={true}>Marque sua aula experimental!</Link>
         <Footer />
+        <WhatsappContact />
     </section>
   );
 };

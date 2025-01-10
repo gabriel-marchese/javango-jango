@@ -3,6 +3,8 @@ import { useLocation } from 'react-router-dom';
 import '../styles/pages/eventDetail.css'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import WhatsappContact from '../components/WhatsappContact';
+import { Link } from 'react-router-dom';
 
 const EventDetail = () => {
   useEffect(() => {
@@ -40,6 +42,8 @@ const EventDetail = () => {
           <div className='video-event'>
           <iframe src="https://www.youtube.com/embed/-R0UYHS8A_A" title="Afternoon Jazz 🎷 [jazz lofi]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
+          <Link to="/contact" replace={true}>Marque sua aula experimental!</Link>
+        <WhatsappContact />
         <Footer />
     </section>
   ) 

@@ -4,6 +4,7 @@ import '../styles/pages/home.css'
 import SideImage from '../images/side-image-guitar.jpg'
 import Footer from '../components/Footer';
 import CursoSection from '../components/CursoSection';
+import WhatsappContact from '../components/WhatsappContact';
 import ImageBackground from '../components/ImageBackground';
 import Place from '../components/Place';
 import Maps from '../components/Maps';
@@ -23,6 +24,7 @@ const Home = () => {
     <>
      <Header />
      <Introduction />
+     <WhatsappContact />
      <main>
        <h2>JAVANGO<span className="stroke-text">JANGO</span></h2>
        <div className='fundo-imagem'>

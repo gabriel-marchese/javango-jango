@@ -36,14 +36,14 @@ h2 {
 
 .fundo-imagem4 {
     position: absolute;
-    left: 39rem;
-    top: 36rem;
+    left: 3rem;
+    top: 65rem;
     rotate: -20deg;
     z-index: -10;
 }
 
 .fundo-imagem4 > img {
-    width: 350px;
+    width: 200px;
 }
 
 .fundo-imagem2 {

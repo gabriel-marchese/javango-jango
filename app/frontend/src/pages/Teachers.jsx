@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/pages/teachers.css';
 import { teacherData } from '../data/teacherData';
 import Footer from '../components/Footer';
+import WhatsappContact from '../components/WhatsappContact';
 
 const Teachers = () => {
   const [selectedProfessor, setSelectedProfessor] = useState(null);
@@ -24,6 +25,7 @@ const Teachers = () => {
       <Header />
       <h3>Professores</h3>
       <div></div>
+      <div className='phrase-title'><p>Os melhores e mais expêrientes professores!!</p></div>
       <div className='teachers-list'>
         {teacherData[0].aula.map((professor) => (
             <div key={professor.name} className='teachers-item'>
@@ -45,6 +47,7 @@ const Teachers = () => {
         ))}
       </div>
       <Footer />
+      <WhatsappContact />
     </section>
   );
 };

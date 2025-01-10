@@ -1,0 +1,27 @@
+.wapp-contact  {
+    position: fixed !important;
+    right: 1.5rem !important;
+    bottom: 1.5rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    cursor: pointer;
+    transition: all 200ms;
+    filter: drop-shadow(0px 0px 5px #222);
+    background-color: transparent !important;
+    box-shadow: none !important;
+    z-index: 99999;
+}
+
+.wapp-contact:hover {
+    scale: 1.1;
+}
+
+.wapp-contact > img {
+    width: 60px;
+}
+
+@media screen and (max-width: 600px) {
+    .wapp-contact > img {
+        width: 40px;
+    }
+}

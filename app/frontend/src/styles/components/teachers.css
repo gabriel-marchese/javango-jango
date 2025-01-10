@@ -32,6 +32,12 @@
 
 .teachers-section > :nth-child(3) > img {
     height: 60px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.teachers-section > :nth-child(3) > img:hover {
+    scale: 1.1;
 }
 
 .teachers-section > :nth-child(3) > :nth-child(1) {
@@ -71,7 +77,6 @@
 
 .teachers-section > a {
     cursor: pointer;
-    z-index: 99;
     text-decoration: none;
     font-size: 1.3rem;
     background-color: rgb(58, 58, 58);

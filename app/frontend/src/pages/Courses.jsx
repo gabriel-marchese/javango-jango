@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/pages/courses.css';
 import { courseData } from '../data/couseData';
 import Footer from '../components/Footer';
+import WhatsappContact from '../components/WhatsappContact';
 
 const Courses = () => {
   const [selectedCourse, setSelectedCourse] = useState(null);
@@ -24,6 +25,7 @@ const Courses = () => {
       <Header />
       <h3>Aulas</h3>
       <div></div>
+      <div className='phrase-title'><p>Aulas particulares pensadas para você!!</p></div>
       <div className='courses-list'>
         {courseData.map((course) => (
             <div key={course.name} className='course-item'>
@@ -36,6 +38,7 @@ const Courses = () => {
         ))}
       </div>
       <Footer />
+      <WhatsappContact />
     </section>
   );
 };

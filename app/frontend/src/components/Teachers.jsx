@@ -5,11 +5,13 @@ import Seta from '../images/seta-direita1.png';
 import Nota from '../images/nota-musical.png';
 import Circle from '../images/circulo1.png';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Teachers = () => {
   const [selected, setSelected] = useState(0);
   const tdLength = teacherData.length;
 
+  const transition = {type: 'spring', duration: 3}
 
   const leftArrowMove = () => {
     selected === 0
@@ -29,7 +31,12 @@ const Teachers = () => {
         <div></div>
         <div>
             <img src={ Seta } onClick={leftArrowMove} alt="" />
-            <div className='teacher-display'>
+            <motion.div className='teacher-display'
+            key={selected}
+            initial={{opacity: 0, x: -50}}
+            animate={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: 100}}
+            transition={{transition}}>
                 {
                     teacherData[selected].aula.map((teacher) => (
                         <div className='teacher'>
@@ -39,12 +46,12 @@ const Teachers = () => {
                         </div>
                     ))
                 }
-            </div>
+            </motion.div>
             <img src={ Seta } onClick={rightArrowMove} alt="" />
         </div>
         <div className='teachers-change'>
-            <img src={ selected === 0 ? Nota : Circle } alt="" />
-            <img src={ selected === 1 ? Nota : Circle } alt="" />
+            <img src={ selected === 0 ? Nota : Circle } onClick={leftArrowMove} alt="" />
+            <img src={ selected === 1 ? Nota : Circle } onClick={rightArrowMove}alt="" />
         </div>
         <Link to="/teachers">Veja Mais</Link>
     </section>

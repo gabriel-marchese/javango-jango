@@ -16,20 +16,26 @@
     text-transform: uppercase;
 }
 
-.image-parallax > button {
+.image-parallax > a {
     cursor: pointer;
     border: none;
     margin-top: 20px;
     font-weight: 700;
     font-size: 1.3rem;
     background-color: white;
+    color: black;
     padding: 0 15px;
     text-transform: uppercase;
     box-shadow: 6px 6px red;
     transition: all 300ms;
+    text-decoration: none;
 }
 
-.image-parallax > button:hover {
+.image-parallax > a:visited {
+    color: black;
+}
+
+.image-parallax > a:hover {
     box-shadow: 0px 0px red;
     scale: 1.1;
 }
