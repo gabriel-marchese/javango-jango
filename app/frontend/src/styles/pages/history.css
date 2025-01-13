@@ -4,6 +4,24 @@
     width: 100vw;
 }
 
+.line-red-v  {
+    width: 20px;
+    height: 90px;
+    background-color: rgb(219, 9, 9);
+    position: absolute;
+    left: 20.6rem;
+    top: -3.1rem;
+    animation: lineV 2s;
+} 
+
+.hidden {
+    opacity: 0;
+}
+
+@keyframes lineV {
+    from { height: 0rem };
+}
+
 .title-history {
     display: flex;
     align-items: center;
@@ -23,15 +41,6 @@
     font-size: 4rem;
     margin-top: 6rem;
 }
-
-.title-history > :nth-child(3) {
-    width: 20px;
-    height: 90px;
-    background-color: rgb(219, 9, 9);
-    position: absolute;
-    left: 20.6rem;
-    top: -3.1rem;
-} 
 
 .history-section > :nth-child(3) {
     position: absolute;

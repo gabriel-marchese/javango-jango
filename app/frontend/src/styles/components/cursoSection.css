@@ -34,7 +34,7 @@
     text-shadow: 0px 2px 2px white
 }
 
-.title-cursos > div {
+.line-red {
     position: absolute;
     width: 12.4rem;
     height: 25px;
@@ -42,7 +42,18 @@
     left: 0rem;
     top: 3rem;
     z-index: -1;
+    animation: line 3s;
 }
+
+.hidden {
+    opacity: 0;
+    width: 1000px;
+}
+
+@keyframes line {
+    from { width: 0rem };
+}
+
 
 .cursos-section > div {
     width: 350px;

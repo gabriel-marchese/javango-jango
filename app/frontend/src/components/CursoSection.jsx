@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const CursoSection = () => {
   const [selectedCourse, setSelectedCourse] = useState(null);
   const navigate = useNavigate();
+  const [animate, setAnimate] = useState(true);
 
   const handleSelectCourse = (course) => {
     setSelectedCourse(course);
@@ -38,11 +39,17 @@ const CursoSection = () => {
     card.style.transform = `rotateX(0deg) rotateY(0deg) scale(1)`;
   };
 
+  const animateScroll = () => {
+    setAnimate(false)
+  }
+
+  const mobile = window.innerWidth<=768 ? false : true;
+
   return (
-    <div className='cursos-content'>
+    <div className='cursos-content' onMouseEnter={animateScroll}>
       <div className='title-cursos'>
         <h2>Cursos</h2>
-        <div></div>
+        <div className={ (animate === true && mobile === true) ? 'hidden' : 'line-red'}></div>
       </div>
       <section className='cursos-section'>
         {courseData.map((course, index) => (

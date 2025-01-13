@@ -10,6 +10,7 @@ import WhatsappContact from '../components/WhatsappContact';
 const Courses = () => {
   const [selectedCourse, setSelectedCourse] = useState(null);
   const navigate = useNavigate();
+  const [animate, setAnimate] = useState(true);
 
   const handleSelectCourse = (course) => {
     setSelectedCourse(course);
@@ -20,11 +21,17 @@ const Courses = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const animateScroll = () => {
+    setAnimate(false)
+  }
+
+  const mobile = window.innerWidth<=768 ? false : true;
+
   return (
-    <section className='courses-container'>
+    <section className='courses-container' onMouseEnter={animateScroll}>
       <Header />
       <h3>Aulas</h3>
-      <div></div>
+      <div className={ (animate === true && mobile === true) ? 'hidden' : 'line-red'}></div>
       <div className='phrase-title'><p>Aulas particulares pensadas para você!!</p></div>
       <div className='courses-list'>
         {courseData.map((course) => (

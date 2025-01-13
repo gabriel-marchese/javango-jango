@@ -41,7 +41,7 @@ export const courseData = [
     {
         name: "William",
         fullname: "William",
-        instrument: "Guitarra/Violão",
+        instrument: "Guitarra - Violão",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident esse laboriosam blanditiis iusto porro nesciunt aliquid libero distinctio, obcaecati minus sequi error, molestias necessitatibus harum nobis non. Amet, blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident esse laboriosam blanditiis iusto porro nesciunt aliquid libero distinctio, obcaecati minus sequi error, molestias necessitatibus harum nobis non. Amet, blanditiis?",
         image: Bateria,
         fundo: FundoImagem3

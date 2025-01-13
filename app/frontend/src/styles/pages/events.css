@@ -15,6 +15,7 @@
 }
 
 .events-container > :nth-child(3) {
+    position: static !important;
     width: 270px;
     height: 30px;
     background-color: rgb(160, 13, 13);

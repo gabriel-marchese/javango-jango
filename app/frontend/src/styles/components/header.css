@@ -19,6 +19,14 @@
     opacity: 1;
 }
 
+.header-container > a {
+    transition: all 300ms;
+}
+
+.header-container > a:hover {
+    scale: 1.1;
+}
+
 .header-list-itens {
     display: flex;
     gap: 1rem;

@@ -10,6 +10,7 @@ import WhatsappContact from '../components/WhatsappContact';
 const Teachers = () => {
   const [selectedProfessor, setSelectedProfessor] = useState(null);
   const navigate = useNavigate();
+  const [animate, setAnimate] = useState(true);
 
   const handleSelectProfessor = (professor) => {
     setSelectedProfessor(professor);
@@ -20,11 +21,17 @@ const Teachers = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const animateScroll = () => {
+    setAnimate(false)
+  }
+
+  const mobile = window.innerWidth<=768 ? false : true;
+
   return (
-    <section className='teachers-container'>
+    <section className='teachers-container' onMouseEnter={animateScroll}>
       <Header />
       <h3>Professores</h3>
-      <div></div>
+      <div className={ (animate === true && mobile === true) ? 'hidden' : 'line-red'}></div>
       <div className='phrase-title'><p>Os melhores e mais expêrientes professores!!</p></div>
       <div className='teachers-list'>
         {teacherData[0].aula.map((professor) => (

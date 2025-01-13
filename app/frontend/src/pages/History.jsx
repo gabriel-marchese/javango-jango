@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from '../images/side-image-guitar.jpg';
@@ -10,18 +10,30 @@ import { Link } from 'react-router-dom';
 
 
 const History = () => {
+  const [animate, setAnimate] = useState(true);
+  const [animateV, setAnimateV] = useState(true);
+
+  const mobile = window.innerWidth<=768 ? false : true;
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const animateScroll = () => {
+    setAnimate(false)
+  }
+
+  const animateScrollV = () => {
+    setAnimateV(false)
+  }
+
   return (
-    <section className='history-section'>
+    <section className='history-section' onMouseEnter={animateScrollV}>
         <Header />
         <div className='title-history'>
           <h2>Nossa</h2>
           <h2>História</h2>
-          <div></div>
+          <div className={ (animateV === true && mobile === true) ? 'hidden' : 'line-red-v'}></div>
         </div>
         <div><img src={ Palheta } alt="" /></div>
         <div>
@@ -34,10 +46,10 @@ const History = () => {
         <div className='video-content'>
           <iframe width="900" height="450" src="https://www.youtube.com/embed/-R0UYHS8A_A" title="Afternoon Jazz 🎷 [jazz lofi]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div className='javango'>
+        <div className='javango' onMouseEnter={animateScroll}>
           <div>
             <h2>QuemSomos</h2>
-            <div></div>
+            <div className={ (animate === true && mobile === true) ? 'hidden' : 'line-red'}></div>
             <h3>Javango<span>Jango</span></h3>
             <p>JavangoJango começou como uma banda de pessoas que só gostavam de música, e se tornou o maior projetos de nossas vidas. <br /><br /> A Javango para nós vai muito alem de uma escola de música, tratasse de um espaço para conhecer pessoas, acolher, dar muita risada e isso tudo, é a musíca que proporciona. A música está além de tocar um instrumento, aqui na Javango, vivemos música.</p>
           </div>

@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import WhatsappContact from '../components/WhatsappContact';
 
 const Events = () => {
-
+  const [animate, setAnimate] = useState(true);
   const [selectedEvent, setSelectedEvent] = useState(null);
   const navigate = useNavigate();
 
@@ -20,11 +20,17 @@ const Events = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const animateScroll = () => {
+    setAnimate(false)
+  }
+
+  const mobile = window.innerWidth<=768 ? false : true;
+
   return (
-    <section className='events-container'>
+    <section className='events-container' onMouseEnter={animateScroll}>
         <Header />
         <h3>Eventos</h3>
-        <div></div>
+        <div className={ (animate === true && mobile === true) ? 'hidden' : 'line-red'}></div>
         <div className='events-list'>
         {
           eventsData.map((event) => (

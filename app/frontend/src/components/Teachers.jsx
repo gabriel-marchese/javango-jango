@@ -10,6 +10,7 @@ import { motion } from 'framer-motion';
 const Teachers = () => {
   const [selected, setSelected] = useState(0);
   const tdLength = teacherData.length;
+  const [animate, setAnimate] = useState(true);
 
   const transition = {type: 'spring', duration: 3}
 
@@ -25,10 +26,16 @@ const Teachers = () => {
         : setSelected((prev) => prev +1);
   }
 
+  const animateScroll = () => {
+    setAnimate(false)
+  }
+
+  const mobile = window.innerWidth<=768 ? false : true;
+
   return (
-    <section className='teachers-section'>
+    <section className='teachers-section' onMouseEnter={animateScroll}>
         <h3>Professores</h3>
-        <div></div>
+        <div className={ (animate === true && mobile === true) ? 'hidden' : 'line-red'}></div>
         <div>
             <img src={ Seta } onClick={leftArrowMove} alt="" />
             <motion.div className='teacher-display'
