@@ -19,7 +19,7 @@ h2 {
     left: 10rem;
     top: 9rem;
     transform: rotate(40deg);
-    z-index: 1;
+    z-index: -1;
     transition: all 300ms; 
     pointer-events: auto;
 }

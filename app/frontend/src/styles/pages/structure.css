@@ -23,6 +23,7 @@
     left: 22rem;
     font-size: 4rem;
     margin-top: 6rem;
+    z-index: 99;
 }
 
 .title-structure > :nth-child(3) {
@@ -31,7 +32,7 @@
     background-color: rgb(219, 9, 9);
     position: absolute;
     left: 20.6rem;
-    top: -3.1rem;
+    top: -3.1rem; 
 } 
 
 .structure-section > :nth-child(3) {
@@ -276,6 +277,19 @@ animation: moveAround2 9s ease-in-out infinite;
     }
   }
 
+@media screen and (max-width: 1680px) {
+    .title-structure > :nth-child(1) {
+        left: 17rem;
+    }
+    .title-structure > :nth-child(2) {
+        left: 17rem;
+    }
+    .title-structure > :nth-child(3) {
+        left: 15.6rem;
+    }
+}
+
+  
 @media screen and (max-width: 1440px) {
     .title-structure > :nth-child(1) {
         left: 12rem;
